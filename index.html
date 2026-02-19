@@ -12,7 +12,7 @@
       <a class="brand" href="index.html">Trevor Bush</a>
 
       <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
-        ☰ <span style="font-size:0.95rem;color:#555;">Menu</span>
+        ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
       </button>
 
       <nav class="navlinks" id="navlinks">
@@ -25,41 +25,37 @@
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <!-- Add assets/profile.jpg later. For now this blank box is fine. -->
-      <img class="avatar" src="assets/profile.JPEG" alt="Profile picture" onerror="this.style.display='none'"/>
-      <div>
-        <h1>Hi, I'm Trevor.</h1>
-        <p>
-          I use lipidomics and systems pharmacology to understand how cellular networks become dysregulated in aging and chronic disease,
-          and how bioactive natural products can help restore them.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <h2>About Me</h2>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <img class="hero-avatar" src="assets/profile.jpg" alt="Trevor Bush headshot">
+      <h1>Hi, I’m Trevor</h1>
       <p>
-        I’m a Pharmacology PhD student at Yale working at the intersection of mass spectrometry-based lipidomics, proteomics, and
-        network-level pharmacology. My work focuses on mechanistic inference from multi-omics data and translating that into actionable
-        hypotheses for disease modulation and therapy.
+        I use lipidomics and systems pharmacology to understand how cellular networks become dysregulated in aging and chronic disease,
+        and how bioactive natural products can help restore them.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section>
-      <h2>Let’s Connect</h2>
-      <p>Email: <a href="mailto:trevor@example.com">trevor.bush@yale.edu</a> (update this)</p>
-      <p>GitHub: <a href="https://github.com/trevbush7">github.com/trevbush7</a></p>
-    </section>
+  <!-- CONTENT -->
+  <main class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      I’m a Pharmacology PhD student at Yale working at the intersection of mass spectrometry–based lipidomics, proteomics,
+      and network-level pharmacology. My goal is to infer enzymatic dysregulation from multi-omics data and translate those
+      mechanisms into testable hypotheses and therapeutic strategies.
+    </p>
+
+    <h2 class="section-title">Let’s Connect!</h2>
+    <p>Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a></p>
+    <p>LinkedIn: <a href="YOUR_LINKEDIN_HERE">YOUR_LINKEDIN_HERE</a></p>
   </main>
 
-  <footer>
+  <div class="footer">
     <div class="container">
-      <a class="backtotop" href="#top">↑</a>
-      <div>© <span id="year"></span> Trevor Bush</div>
+      © <span id="year"></span> Trevor Bush
     </div>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
   <script>
