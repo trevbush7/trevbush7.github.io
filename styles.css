@@ -210,7 +210,7 @@ p{
 
 /* Narrower, centered content column on research page */
 .research-content {
-  max-width: 900px;
+  max-width: 500px;
   margin: 3rem auto 4rem auto;   /* top, right/left, bottom */
   padding: 0 1.5rem;
 }
