@@ -1,21 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Research | Trevor J. Bush</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trevor Bush</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
 
 <header>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="research.html" class="active">Research</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="container navbar">
+    <a class="brand" href="index.html">Trevor Bush</a>
+
+    <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
+      ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
+    </button>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html">Education</a>
+      <a href="resume.html">Resume</a>
+      <a href="connect.html">Let's Connect</a>
+    </nav>
+  </div>
 </header>
 
 <main class="content">
