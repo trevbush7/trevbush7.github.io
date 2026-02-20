@@ -81,7 +81,7 @@ header{
 .hero{
   position:relative;
   width:100%;
-  min-height: 82vh;        /* more dramatic */
+  min-height: 60vh;        /* more dramatic */
   display:flex;
   align-items:center;
   justify-content:center;
