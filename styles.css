@@ -380,11 +380,10 @@ p{
 
 /* === EDUCATION PAGE === */
 
-/* Outer layout for the education page */
+/* Outer layout for the education page
+   (main already has .container inside) */
 .page.education-page {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 5rem 1.5rem 4rem;
+  padding: 5rem 0 4rem;
 }
 
 /* Slide-in animation for the whole page content
