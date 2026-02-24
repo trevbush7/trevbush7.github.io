@@ -32,13 +32,12 @@
     }
 
     .page-hero p {
-      max-width: 650px;
+      max-width: 700px;
       margin: 0.5rem auto 0;
       color: var(--text-muted);
       font-size: 0.98rem;
     }
 
-    /* SECTION HEADERS */
     .section-header {
       max-width: 1100px;
       margin: 3rem auto 1.5rem;
@@ -48,8 +47,6 @@
     .section-header h2 {
       font-size: 1.55rem;
       font-weight: 700;
-      letter-spacing: 0.3px;
-      color: var(--text-main);
       margin-bottom: 0.3rem;
     }
 
@@ -59,7 +56,6 @@
       max-width: 650px;
     }
 
-    /* MENTOR ROWS */
     .mentors-list {
       max-width: 1100px;
       margin: 0 auto 3rem;
@@ -79,10 +75,6 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
     }
 
-    .mentor-row.reverse {
-      flex-direction: row-reverse;
-    }
-
     .mentor-image-wrapper {
       flex-shrink: 0;
       width: 135px;
@@ -97,12 +89,10 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center;
     }
 
     .mentor-content {
       flex: 1;
-      text-align: left;
       font-size: 0.95rem;
     }
 
@@ -137,8 +127,7 @@
     }
 
     @media (max-width: 800px) {
-      .mentor-row,
-      .mentor-row.reverse {
+      .mentor-row {
         flex-direction: column;
         padding: 1.5rem 1.4rem;
       }
@@ -158,11 +147,9 @@
 <header>
   <div class="container navbar">
     <a class="brand" href="index.html">Trevor Bush</a>
-
     <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
       ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
     </button>
-
     <nav class="navlinks" id="navlinks">
       <a href="index.html">Home</a>
       <a href="research.html">Research</a>
@@ -176,17 +163,16 @@
 
 <main>
 
-  <!-- HERO -->
   <section class="page-hero">
     <h1>Mentors</h1>
     <p>
-      My scientific training is shaped by an interdisciplinary team spanning neural stem cell lipid biology,
-      herbal and network pharmacology, quantitative proteomics and spatial omics,
-      and systems-level tissue circuitry and modeling.
+      My scientific training is shaped by complementary mentorship in lipid-driven aging biology,
+      multi-target herbal pharmacology, quantitative mass spectrometry, spatial omics,
+      and systems-level tissue circuit modeling.
     </p>
   </section>
 
-  <!-- PRIMARY MENTOR (PI) -->
+  <!-- PRIMARY MENTOR -->
   <section class="section-header">
     <h2>Primary Mentor</h2>
     <p>My PI and primary scientific home at Yale.</p>
@@ -194,7 +180,7 @@
 
   <section class="mentors-list">
 
-    <!-- PI: Zhao -->
+    <!-- Zhao -->
     <article class="mentor-row">
       <div class="mentor-image-wrapper">
         <img src="assets/xiaoai-zhao.jpg" alt="Xiaoai Zhao" />
@@ -209,23 +195,17 @@
         <div class="mentor-body">
           <h3 class="mentor-section-title">Research Focus</h3>
           <p>
-            Dr. Zhao studies how complex lipids regulate neural stem cell function and decline during aging.
-            Her lab dissects how phospholipid and sphingolipid acyl-chain composition and organelle-specific
-            lipid environments shape organelle function, cellular stress responses, and regenerative capacity
-            in the aging brain.
-          </p>
-          <p>
-            Her group uses organelle-resolved lipidomics and complementary multi-omic approaches to map
-            how lipid effector networks are remodeled during aging and in neurodegenerative disease, and
-            to identify lipid-centric mechanisms that maintain neural stem cell resilience.
+            Dr. Zhao studies how complex lipid composition and organelle-specific lipid
+            remodeling regulate neural stem cell function and decline during aging.
+            Her lab dissects how phospholipid and sphingolipid acyl-chain architecture
+            shapes organelle stress responses, metabolic state, and regenerative capacity.
           </p>
 
           <h3 class="mentor-section-title">Role in My Training</h3>
           <p>
-            Dr. Zhao is my primary mentor and the intellectual anchor for my lipidomics and aging work.
-            She provides expertise in organelle-resolved lipidomics, neural stem cell biology, and
-            mass spectrometry method development, shaping how I interrogate lipid-driven systems physiology
-            and network miswiring in aging and chronic disease.
+            Dr. Zhao anchors my lipidomics and aging biology work. She provides expertise
+            in organelle-resolved lipidomics and lipid-driven systems physiology,
+            shaping how I define effector-layer lipid remodeling in aging and disease.
           </p>
         </div>
       </div>
@@ -233,13 +213,12 @@
 
   </section>
 
-  <!-- COMMITTEE SECTION -->
+  <!-- COMMITTEE -->
   <section class="section-header">
     <h2>Thesis Committee</h2>
     <p>
-      Faculty guiding my dissertation through complementary expertise in medicinal plant pharmacology
-      and herbal formulations, quantitative proteomics and spatial omics, and systems-level tissue circuitry
-      and spatial modeling.
+      Faculty guiding my dissertation through complementary expertise in herbal pharmacology,
+      quantitative multi-omics mass spectrometry, and predictive tissue systems biology.
     </p>
   </section>
 
@@ -260,19 +239,18 @@
         <div class="mentor-body">
           <h3 class="mentor-section-title">Research Focus</h3>
           <p>
-            Dr. Cheng is a pioneer in antiviral and anticancer drug development and a global leader in
-            traditional Chinese medicine. His lab applies modern pharmacology, rigorous quality control,
-            and immuno-oncology frameworks to dissect multi-component herbal medicines such as PHY906/YIV-906,
-            using concepts from network pharmacology and polypharmacology to understand how complex formulas
-            modulate host and tumor biology.
+            Dr. Cheng is a pioneer in antiviral and anticancer drug development and a global
+            leader in traditional Chinese medicine. His work applies rigorous pharmacology
+            and quality-control frameworks to multi-component herbal formulations,
+            emphasizing polypharmacology and network-level mechanisms of action.
           </p>
 
           <h3 class="mentor-section-title">Role in My Training</h3>
           <p>
-            Dr. Cheng anchors the herbal systems pharmacology and translational components of my work.
-            He provides mentorship in multi-herb formulation design, mechanism-based quality control,
-            and pharmacology frameworks for studying polypharmacological and synergistic herbal interventions,
-            informing how I connect multi-omic network readouts to realistic therapeutic strategies.
+            Dr. Cheng guides me in developing multi-target treatments derived from herbal
+            medicine. He provides mentorship in formulation design, pharmacological
+            validation, and mechanistic analysis of polypharmacological and synergistic
+            herbal interventions within a network pharmacology framework.
           </p>
         </div>
       </div>
@@ -293,18 +271,20 @@
         <div class="mentor-body">
           <h3 class="mentor-section-title">Research Focus</h3>
           <p>
-            Dr. Liu’s lab defines quantitative rules of proteome dynamics using innovations such as DeltaSILAC.
-            His group develops DIA-MS workflows, PTM and phosphoproteomics pipelines, and MALDI-based spatial
-            proteomics to map protein abundance, turnover, post-translational regulation, and spatially organized
-            proteome networks across tissues and disease states.
+            Dr. Liu’s lab develops quantitative mass spectrometry and bioinformatic
+            frameworks to define proteome dynamics, protein abundance, turnover,
+            PTMs, and phosphoproteomic signaling states. His group integrates DIA-MS,
+            lipidomics, and MALDI-based spatial omics to construct spatially organized
+            multi-omic network models.
           </p>
 
           <h3 class="mentor-section-title">Role in My Training</h3>
           <p>
-            Dr. Liu guides my integration of lipidomics with quantitative proteomics, PTM and phosphoproteomic
-            analysis, and MALDI spatial omics. His mentorship shapes how I build DIA-based workflows to quantify
-            protein abundance and signaling state, and how I interpret multi-omic and spatial data as coherent
-            lipid–protein network models in aging and chronic inflammatory disease.
+            Dr. Liu provides complementary mass spectrometry expertise across both
+            proteomics and lipidomics. He guides my development of DIA-based workflows,
+            PTM and phosphoproteomic analysis, multi-omic bioinformatic integration,
+            and MALDI spatial omics approaches that enable quantitative and spatial
+            modeling of lipid–protein networks.
           </p>
         </div>
       </div>
@@ -325,17 +305,21 @@
         <div class="mentor-body">
           <h3 class="mentor-section-title">Research Focus</h3>
           <p>
-            Dr. Chung develops predictive models of tissue biology using spatial genomics, multi-omics,
-            and machine-learning approaches to define cell–cell interaction motifs and circuit architectures
-            that govern tissue resilience and failure in health and disease.
+            Dr. Chung studies cellular heterogeneity and tissue homeostasis through
+            systems biology. Her lab seeks to define the minimal cell–cell circuit
+            motifs that sustain stable, adaptive, and resilient tissues across development,
+            physiological fluctuation, aging, and disease. By integrating spatially resolved
+            genomics, machine learning, and mechanistic modeling, her group aims to uncover
+            the “grammar” of cellular interactions that governs tissue remodeling and failure.
           </p>
 
           <h3 class="mentor-section-title">Role in My Training</h3>
           <p>
-            Dr. Chung contributes systems-biology thinking, spatial modeling, and circuit-level frameworks that
-            help me interpret multi-omics and spatial omics data in terms of tissue-level organization and
-            resilience. Her perspective informs how I connect effector-layer lipid and protein signatures and
-            spatial remodeling to higher-order concepts of tissue circuitry and network resilience.
+            Dr. Chung contributes predictive systems-biology frameworks that shape how I
+            interpret spatial and multi-omic data in terms of tissue-level circuits.
+            Her perspective informs how lipid–protein network remodeling and herbal
+            interventions are contextualized within higher-order cell–cell interaction
+            motifs governing tissue resilience and failure.
           </p>
         </div>
       </div>
@@ -351,7 +335,6 @@
   </div>
 </div>
 
-<script src="script.js"></script>
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
