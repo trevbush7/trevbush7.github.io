@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Trevor Bush – CV</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">Trevor Bush</a>
+
+    <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
+      ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
+    </button>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html">Education</a>
+      <a href="resume.html" aria-current="page">CV</a>
+      <a href="connect.html">Let's Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main class="cv-page">
+  <section class="cv-header-section">
+    <div class="container cv-header-inner">
+      <div>
+        <h1 class="cv-title">Curriculum Vitae</h1>
+        <p class="cv-updated">Last updated – February 2026</p>
+      </div>
+
+      <a class="cv-download-btn" href="Trevor_Bush_CV.pdf" target="_blank" rel="noopener">
+        ⬇ Download PDF
+      </a>
+    </div>
+  </section>
+
+  <section class="cv-viewer-section">
+    <div class="container cv-frame-wrapper">
+      <!-- The #view=FitH makes the PDF fit nicely horizontally -->
+      <iframe
+        src="Trevor_Bush_CV.pdf#view=FitH"
+        title="CV of Trevor Bush"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
