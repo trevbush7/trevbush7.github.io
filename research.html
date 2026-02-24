@@ -20,6 +20,7 @@
       <a href="index.html">Home</a>
       <a href="research.html" aria-current="page">Research</a>
       <a href="education.html">Education</a>
+      <a href="mentors.html">Mentors</a>
       <a href="resume.html">Resume</a>
       <a href="connect.html">Let's Connect</a>
     </nav>
@@ -116,9 +117,16 @@
 
 </main>
 
-<footer>
-  <p>© 2026 Trevor J. Bush</p>
-</footer>
+<div class="footer">
+  <div class="container">
+    © <span id="year"></span> Trevor Bush
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
