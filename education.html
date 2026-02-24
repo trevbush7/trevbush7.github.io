@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Education – Trevor Bush</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">Trevor Bush</a>
+
+    <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
+      ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
+    </button>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html" aria-current="page">Education</a>
+      <a href="resume.html">Resume</a>
+      <a href="connect.html">Let's Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page education-page slide-up">
+  <section class="edu-header">
+    <p class="eyebrow">Academic Journey</p>
+    <h1 class="edu-title">Education</h1>
+  </section>
+
+  <section class="edu-list">
+    <!-- School 1 -->
+    <article class="edu-card">
+      <div class="edu-card-main">
+        <h2 class="edu-school">Yale University</h2>
+        <p class="edu-meta">2025 – 20XX · New Haven, CT</p>
+        <p class="edu-degree">
+          Ph.D. in <span>Biochemistry &amp; Molecular Biology</span><br />
+          Focus: natural products, fibrosis &amp; network pharmacology
+        </p>
+        <p class="edu-extra">
+          Selected academic work:
+        </p>
+        <div class="edu-tags">
+          <span class="edu-tag">Lipidomics &amp; Proteomics</span>
+          <span class="edu-tag">Systems Pharmacology</span>
+          <span class="edu-tag">Fibrosis Drug Discovery</span>
+        </div>
+      </div>
+      <div class="edu-logo">
+        <!-- optional: replace with an <img> logo -->
+        <span class="edu-logo-placeholder">Y</span>
+      </div>
+    </article>
+
+    <!-- School 2 -->
+    <article class="edu-card">
+      <div class="edu-card-main">
+        <h2 class="edu-school">Worcester Polytechnic Institute</h2>
+        <p class="edu-meta">2019 – 2023 · Worcester, MA</p>
+        <p class="edu-degree">
+          B.S. in Biotechnology &amp; B.S. in Biochemistry (double major)
+        </p>
+        <p class="edu-extra">
+          Highlights:
+        </p>
+        <div class="edu-tags">
+          <span class="edu-tag">Undergraduate Research</span>
+          <span class="edu-tag">Systems Biology</span>
+          <span class="edu-tag">Honors Thesis</span>
+        </div>
+      </div>
+      <div class="edu-logo">
+        <span class="edu-logo-placeholder">WPI</span>
+      </div>
+    </article>
+
+    <!-- Add more edu-card blocks as needed -->
+  </section>
+</main>
+
+<script src="scripts.js"></script>
+</body>
+</html>
