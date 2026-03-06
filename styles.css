@@ -892,3 +892,214 @@ main.research-main {
 
   .footer-inner { flex-direction: column; gap: 4px; text-align: center; }
 }
+
+/* ============================================================
+   PUBLICATIONS PAGE
+   ============================================================ */
+
+.pubs-page {
+  padding: 64px 0 80px;
+}
+
+.pubs-page-header {
+  margin-bottom: 48px;
+}
+
+.pubs-page-header .eyebrow {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.pubs-page-header h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.3rem, 4vw, 3.1rem);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 14px;
+}
+
+.pubs-page-header .pubs-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 560px;
+}
+
+/* Year group divider */
+.pub-year-group {
+  margin-bottom: 44px;
+}
+
+.pub-year-label {
+  font-family: var(--serif);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Individual publication card */
+.pub-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 24px 28px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: start;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  animation: fadeUp 0.5s ease both;
+}
+
+.pub-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.pub-card-left { flex: 1; }
+
+.pub-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+  background: var(--green-light);
+  border: 1px solid var(--green-mid);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
+
+.pub-title {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.pub-authors {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.pub-authors strong {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.pub-journal {
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.pub-journal span {
+  font-style: normal;
+  color: var(--muted);
+}
+
+.pub-links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--ink-soft);
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.pub-link:hover {
+  border-color: var(--green-mid);
+  color: var(--green);
+  background: var(--green-light);
+  opacity: 1;
+  transform: none;
+}
+
+.pub-link.doi {
+  background: var(--green);
+  color: #fff;
+  border-color: var(--green);
+}
+
+.pub-link.doi:hover {
+  background: #165a49;
+  border-color: #165a49;
+  color: #fff;
+}
+
+/* Scholar / ORCID strip */
+.pubs-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 44px;
+}
+
+.profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: all 0.18s ease;
+}
+
+.profile-link:hover {
+  border-color: var(--green-mid);
+  color: var(--green);
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .pub-card {
+    grid-template-columns: 1fr;
+    padding: 20px 18px;
+  }
+
+  .pub-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
