@@ -11,11 +11,9 @@
 <header>
   <div class="container navbar">
     <a class="brand" href="index.html">Trevor Bush</a>
-
     <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
-      ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
+      ☰ <span>Menu</span>
     </button>
-
     <nav class="navlinks" id="navlinks">
       <a href="index.html">Home</a>
       <a href="research.html" aria-current="page">Research</a>
@@ -27,228 +25,204 @@
   </div>
 </header>
 
-<main class="content research-content">
+<main class="research-main">
 
-  <!-- Intro hero band -->
-  <section class="page-intro research-hero">
-    <h1>Research Interests</h1>
-    <p>
-      My work is grounded in <strong>network pharmacology</strong>: defining how
-      lipid composition, protein signaling networks, and transcriptional programs
-      become dysregulated in aging and chronic inflammatory disease, and designing
-      multi-target interventions that restore these networks—and their spatial
-      organization—toward healthier system-level states.
-    </p>
-    <p>
-      I use a <strong>network-guided phenotypic strategy</strong>. First, I map
-      lipid–protein network dysfunction using multi-omics profiling. Natural
-      products and herbal combinations are then screened for their ability to
-      restore these system-level phenotypes. Proteome-wide structural and stability
-      profiling platforms (CETSA-MS, LiP-MS, PELSA, and related approaches) are
-      applied under mixture conditions to define how multi-component formulas
-      perturb protein networks. These measurements are integrated with
-      <strong>lipidomics, proteomics, RNA sequencing, and spatial omics</strong>
-      to resolve distributed mechanisms of polypharmacology and emergent synergy.
-    </p>
+  <!-- Page hero — light, on-brand -->
+  <section class="research-hero">
+    <div class="research-hero-inner">
+
+      <div class="research-hero-left">
+        <p class="eyebrow">Research</p>
+        <h1>Research<br>Interests</h1>
+        <p class="tagline">
+          Defining how lipid–protein networks become dysregulated in aging
+          and chronic inflammatory disease — and designing multi-target
+          interventions that restore them toward healthier states.
+        </p>
+      </div>
+
+      <div class="research-hero-right">
+        <p>
+          My work is grounded in <strong>network pharmacology</strong>: defining how
+          lipid composition, protein signaling networks, and transcriptional programs
+          become dysregulated in aging and chronic inflammatory disease, and designing
+          multi-target interventions that restore these networks — and their spatial
+          organization — toward healthier system-level states.
+        </p>
+        <p>
+          I use a <strong>network-guided phenotypic strategy</strong>. First, I map
+          lipid–protein network dysfunction using multi-omics profiling. Natural
+          products and herbal combinations are then screened for their ability to
+          restore these system-level phenotypes. Proteome-wide structural and stability
+          profiling platforms (CETSA-MS, LiP-MS, PELSA, and related approaches) are
+          applied under mixture conditions to define how multi-component formulas
+          perturb protein networks. These measurements are integrated with
+          <strong>lipidomics, proteomics, RNA sequencing, and spatial omics</strong>
+          to resolve distributed mechanisms of polypharmacology and emergent synergy.
+        </p>
+      </div>
+
+    </div>
   </section>
 
-  <section class="research-accordion">
+  <!-- Accordion sections -->
+  <div class="research-accordion-wrap">
 
     <details open>
-      <summary>1. Multi-Omics Systems Biology</summary>
+      <summary>
+        1 — Multi-Omics Systems Biology
+        <span class="chevron">▾</span>
+      </summary>
+      <div class="accordion-body">
 
-      <h3>Effector-Layer and Spatial Mapping of Lipid–Protein Networks</h3>
-      <p>
-        I use a <strong>multi-omics systems biology framework</strong> to map how
-        lipid metabolism and signaling networks reorganize across tissues, cell
-        types, and anatomical niches during normal physiology, aging, and chronic
-        inflammatory disease. This framework integrates
-        <strong>mass spectrometry–based lipidomics and proteomics</strong> with
-        <strong>RNA sequencing, cell-type–resolved profiling, and spatial omics</strong>,
-        allowing regulatory, cellular, and anatomical context to be interpreted
-        together at the network level.
-      </p>
+        <h3>Effector-Layer and Spatial Mapping of Lipid–Protein Networks</h3>
+        <p>
+          I use a <strong>multi-omics systems biology framework</strong> to map how
+          lipid metabolism and signaling networks reorganize across tissues, cell
+          types, and anatomical niches during normal physiology, aging, and chronic
+          inflammatory disease. This framework integrates
+          <strong>mass spectrometry–based lipidomics and proteomics</strong> with
+          <strong>RNA sequencing, cell-type–resolved profiling, and spatial omics</strong>,
+          allowing regulatory, cellular, and anatomical context to be interpreted
+          together at the network level.
+        </p>
 
-      <ul>
-        <li>
-          <strong>Lipidomics (LC–MS/MS and imaging):</strong>
-          High-resolution LC–MS/MS lipidomics is used to quantify complex lipid
-          species, with class- and species-level ratio analysis to infer
-          <em>in vivo</em> changes in enzymatic activity and pathway flux. These
-          measurements define how lipid composition and bioactive lipid mediators
-          shift across aging and inflammatory states.
-        </li>
+        <ul>
+          <li>
+            <strong>Lipidomics (LC–MS/MS and imaging)</strong>
+            High-resolution LC–MS/MS lipidomics is used to quantify complex lipid
+            species, with class- and species-level ratio analysis to infer
+            <em>in vivo</em> changes in enzymatic activity and pathway flux. These
+            measurements define how lipid composition and bioactive lipid mediators
+            shift across aging and inflammatory states.
+          </li>
+          <li>
+            <strong>Proteomics (DIA-MS, protein abundance, PTM, and phosphoproteomics)</strong>
+            Quantitative data-independent acquisition (DIA) mass spectrometry is used
+            to measure proteome-wide protein abundance with high reproducibility across
+            tissues, cell types, and conditions. This is coupled with targeted and global
+            post-translational modification profiling — including phosphoproteomics — to
+            define kinase activity, inflammatory pathway engagement, protein turnover, and
+            post-translational regulation of lipid metabolic enzymes.
+          </li>
+          <li>
+            <strong>Cell-type–resolved profiling (flow cytometry and FACS)</strong>
+            Flow cytometric phenotyping and FACS are used to isolate defined cell
+            populations prior to lipidomic, proteomic, phosphoproteomic, and transcriptomic
+            analysis. This makes it possible to distinguish changes in tissue composition
+            from intrinsic lipid–protein network rewiring within specific immune, stromal,
+            epithelial, or progenitor populations.
+          </li>
+          <li>
+            <strong>RNA sequencing</strong>
+            Bulk and sorted-population RNA-seq captures transcriptional programs that
+            regulate lipid metabolism, stress responses, and inflammatory signaling.
+            These data provide the regulatory context for interpreting lipidomic and
+            proteomic changes, linking network remodeling to upstream gene-expression control.
+          </li>
+          <li>
+            <strong>Spatial omics (MALDI / DESI and related imaging)</strong>
+            Mass spectrometry imaging and related spatial omics platforms are used to
+            map the tissue localization of lipids and proteins within intact organs.
+            These approaches allow direct comparison of molecular organization across
+            physiology, aging, and pathology, and assessment of how candidate interventions
+            shift these patterns toward a younger or healthier phenotype.
+          </li>
+        </ul>
 
-        <li>
-          <strong>Proteomics (DIA-MS, protein abundance, PTM, and phosphoproteomics):</strong>
-          Quantitative data-independent acquisition (DIA) mass spectrometry is used
-          to measure proteome-wide <strong>protein abundance</strong> with high
-          reproducibility across tissues, cell types, and conditions. This is
-          coupled with targeted and global post-translational modification
-          profiling—including phosphoproteomics—to define kinase activity,
-          inflammatory pathway engagement, protein turnover, and post-translational
-          regulation of lipid metabolic enzymes. Together, these measurements
-          resolve both the quantitative architecture and signaling state of protein
-          networks governing lipid remodeling.
-        </li>
+        <p>
+          Bulk tissue profiling defines organ-level network remodeling; FACS-resolved
+          multi-omics quantifies cell-intrinsic rewiring; and spatial omics preserves
+          tissue architecture, revealing interface- and niche-specific changes that are
+          obscured in homogenates. Integrating these data streams enables network models
+          that explain how lipid remodeling, protein signaling state, and spatial
+          organization jointly determine vulnerability or resilience in aging and chronic
+          inflammatory disease.
+        </p>
 
-        <li>
-          <strong>Cell-type–resolved profiling (flow cytometry and FACS):</strong>
-          Flow cytometric phenotyping and fluorescence-activated cell sorting
-          (FACS) are used to isolate defined cell populations prior to lipidomic,
-          proteomic, phosphoproteomic, and transcriptomic analysis. This makes it
-          possible to distinguish changes in tissue composition from intrinsic
-          lipid–protein network rewiring within specific immune, stromal,
-          epithelial, or progenitor populations.
-        </li>
-
-        <li>
-          <strong>RNA sequencing:</strong>
-          Bulk and sorted-population RNA-seq captures transcriptional programs that
-          regulate lipid metabolism, stress responses, and inflammatory signaling.
-          These data provide the regulatory context for interpreting lipidomic and
-          proteomic changes, linking network remodeling to upstream gene-expression
-          control.
-        </li>
-
-        <li>
-          <strong>Spatial omics (MALDI / DESI and related imaging):</strong>
-          Mass spectrometry imaging and related spatial omics platforms are used to
-          map the <strong>tissue localization</strong> of lipids and proteins
-          within intact organs. These approaches allow direct comparison of
-          molecular organization across physiology, aging, and pathology, and then
-          assessment of how candidate interventions shift these patterns toward a
-          <strong>younger or healthier phenotype</strong>.
-        </li>
-      </ul>
-
-      <p>
-        These layers—lipidomics, proteomics (including abundance, PTM, and
-        phosphoproteomics), RNA-seq, cell-type–resolved profiling, and spatial
-        omics—capture the <strong>effector layer</strong> of biological systems
-        (lipids and proteins), its <strong>regulatory control</strong>
-        (transcription), and its <strong>spatial organization</strong>. Other
-        omics, such as epigenomics or metabolomics, are incorporated when specific
-        mechanistic questions require them, but the core framework focuses on
-        functionally interpretable readouts that directly encode network behavior.
-      </p>
-
-      <p>
-        Bulk tissue profiling defines organ-level network remodeling;
-        FACS-resolved multi-omics quantifies cell-intrinsic rewiring; and spatial
-        omics preserves tissue architecture, revealing interface- and
-        niche-specific changes that are obscured in homogenates. Integrating these
-        data streams enables network models that explain how lipid remodeling,
-        protein signaling state, and spatial organization jointly determine
-        vulnerability or resilience in aging and chronic inflammatory disease, and
-        highlights <strong>actionable network nodes and motifs</strong> for
-        therapeutic intervention.
-      </p>
+      </div>
     </details>
 
     <details>
-      <summary>2. Herbal Systems Pharmacology</summary>
+      <summary>
+        2 — Herbal Systems Pharmacology
+        <span class="chevron">▾</span>
+      </summary>
+      <div class="accordion-body">
 
-      <h3>Network Pharmacology, Polypharmacology, and Synergy in Herbal Medicine</h3>
-      <p>
-        The second arm of my research applies <strong>herbal systems pharmacology</strong>
-        to these network maps. Rather than optimizing single-target inhibition, I
-        study how <strong>multi-target natural products</strong> and rational
-        herbal combinations reshape lipid–protein interaction networks. Each
-        compound or formula is modeled as a distributed perturbation to a
-        biological graph, influencing multiple nodes simultaneously. To define
-        these effects, I combine <strong>proteome-wide target-engagement platforms</strong>
-        with <strong>lipidomics, proteomics, RNA sequencing, and spatial omics</strong>
-        to determine how herbal perturbations propagate through regulatory,
-        signaling, and metabolic layers of disease-relevant networks.
-      </p>
+        <h3>Network Pharmacology, Polypharmacology, and Synergy in Herbal Medicine</h3>
+        <p>
+          The second arm of my research applies <strong>herbal systems pharmacology</strong>
+          to these network maps. Rather than optimizing single-target inhibition, I
+          study how <strong>multi-target natural products</strong> and rational herbal
+          combinations reshape lipid–protein interaction networks. Each compound or
+          formula is modeled as a distributed perturbation to a biological graph,
+          influencing multiple nodes simultaneously.
+        </p>
 
-      <ul>
-        <li>
-          <strong>Proteome-wide stability and structural profiling (CETSA-MS, LiP-MS, PELSA):</strong>
-          Proteome-wide stability and structural profiling platforms are applied
-          under mixture conditions to define the distributed proteomic perturbation
-          landscape induced by multi-component herbal formulas. Ligand-dependent
-          shifts in thermal stability, conformational accessibility, and protein
-          interaction states are quantified across the proteome, capturing both
-          direct binding events and indirect network propagation. Rather than
-          reducing formulas to isolated targets, these data are integrated to
-          reconstruct polypharmacological network rewiring and identify
-          cooperatively engaged protein modules that underlie emergent synergy and
-          systems-level phenotype restoration.
-        </li>
+        <ul>
+          <li>
+            <strong>Proteome-wide stability and structural profiling (CETSA-MS, LiP-MS, PELSA)</strong>
+            These platforms are applied under mixture conditions to define the distributed
+            proteomic perturbation landscape induced by multi-component herbal formulas.
+            Ligand-dependent shifts in thermal stability, conformational accessibility,
+            and protein interaction states are quantified across the proteome, capturing
+            both direct binding events and indirect network propagation.
+          </li>
+          <li>
+            <strong>Integration with lipidomics, proteomics, and RNA sequencing</strong>
+            Proteome-wide perturbation data are integrated with lipidomic, phosphoproteomic,
+            and RNA-seq signatures to determine how protein modules propagate through lipid
+            metabolic, signaling, and transcriptional circuits.
+          </li>
+          <li>
+            <strong>Synergy and network-level response profiling</strong>
+            Herbal combinations, fractions, and dose matrices are systematically tested
+            with multi-omic readouts to identify non-additive network responses. Synergy
+            is defined not only by single endpoints such as viability, but by cooperative
+            normalization of lipid, protein, and transcriptional signatures associated
+            with aging and chronic inflammation.
+          </li>
+          <li>
+            <strong>Spatially resolved intervention mapping</strong>
+            Spatial omics platforms (MALDI, DESI, and related imaging) are used to
+            determine where, within intact tissues and interfaces, herbal interventions
+            restore lipid and protein localization patterns toward a younger or healthier
+            spatial phenotype.
+          </li>
+          <li>
+            <strong>Network-guided lead selection and mechanism-of-action</strong>
+            Mixture-induced proteomic perturbations, multi-omic signatures, and spatial
+            remodeling are integrated into network pharmacology models that rank natural
+            products and combinations by their ability to rewire disease networks toward
+            homeostatic attractor states.
+          </li>
+        </ul>
 
-        <li>
-          <strong>Integration with lipidomics, proteomics, and RNA sequencing:</strong>
-          Proteome-wide perturbation data are integrated with lipidomic,
-          phosphoproteomic, and RNA-seq signatures to determine how protein
-          modules propagate through lipid metabolic, signaling, and transcriptional
-          circuits. This connects mixture-induced protein perturbations to
-          downstream lipid remodeling, pathway activation, and gene-expression
-          programs governing cellular state.
-        </li>
+        <p>
+          Together, <strong>multi-omics systems biology</strong> and
+          <strong>herbal systems pharmacology</strong> form a closed experimental loop —
+          first defining how lipid–protein networks fail in aging and chronic disease,
+          then evaluating polypharmacological herbal interventions to identify strategies
+          that restore network structure and spatial organization toward healthier
+          physiological states.
+        </p>
 
-        <li>
-          <strong>Synergy and network-level response profiling:</strong>
-          Herbal combinations, fractions, and dose matrices are systematically
-          tested with multi-omic readouts to identify <strong>non-additive
-          network responses</strong>. Synergy is defined not only by single
-          endpoints such as viability, but by cooperative normalization of lipid,
-          protein, and transcriptional signatures associated with aging and
-          chronic inflammation.
-        </li>
-
-        <li>
-          <strong>Spatially resolved intervention mapping:</strong>
-          Spatial omics platforms (MALDI, DESI, and related imaging) are used to
-          determine where, within intact tissues and interfaces, herbal
-          interventions restore lipid and protein localization patterns toward a
-          <strong>younger or healthier spatial phenotype</strong>. Where
-          appropriate, these data are paired with spatially informed
-          transcriptomic measurements to connect anatomical remodeling to local
-          regulatory-state changes, linking mechanism to functionally important
-          niches such as barrier regions, vascular interfaces, and
-          stem/progenitor compartments.
-        </li>
-
-        <li>
-          <strong>Network-guided lead selection and mechanism-of-action:</strong>
-          Mixture-induced proteomic perturbations, multi-omic signatures, and
-          spatial remodeling are integrated into <strong>network pharmacology
-          models</strong> that rank natural products and combinations by their
-          ability to rewire disease networks toward homeostatic attractor states.
-          This provides a mechanistically grounded path from complex herbal
-          mixtures to prioritized leads and experimentally testable mechanisms of
-          action.
-        </li>
-      </ul>
-
-      <p>
-        Together, <strong>multi-omics systems biology</strong> and
-        <strong>herbal systems pharmacology</strong> form a closed experimental
-        loop. I first define how lipid–protein networks fail in aging and chronic
-        disease using lipidomics, proteomics, RNA-seq, cell-type–resolved
-        profiling, and spatial omics. Polypharmacological herbal interventions
-        are then evaluated using CETSA-MS, LiP-MS, PELSA, multi-omic profiling,
-        and spatial readouts to identify strategies that restore network
-        structure and spatial organization toward healthier physiological states.
-      </p>
+      </div>
     </details>
 
-  </section>
+  </div>
 
 </main>
 
-<div class="footer">
-  <div class="container">
-    © <span id="year"></span> Trevor Bush
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Trevor Bush</span>
+    <span>© <span id="year"></span> · Yale University · New Haven, CT</span>
   </div>
-</div>
+</footer>
 
 <script src="script.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
