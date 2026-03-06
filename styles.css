@@ -899,6 +899,7 @@ main.research-main {
 
 .pubs-page {
   padding: 64px 0 80px;
+  min-height: calc(100vh - 57px - 78px); /* viewport minus nav minus footer */
 }
 
 .pubs-page-header {
