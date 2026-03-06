@@ -2,150 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Mentors – Trevor Bush</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mentors | Trevor Bush</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    :root {
-      --bg: #f5f5f5;
-      --card-bg: #ffffff;
-      --accent: #1d6f5b;
-      --text-main: #222222;
-      --text-muted: #555555;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text-main);
-    }
-
-    .page-hero {
-      max-width: 1100px;
-      margin: 2.5rem auto 1.5rem;
-      padding: 0 1.5rem;
-      text-align: center;
-    }
-
-    .page-hero h1 {
-      font-size: 2.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .page-hero p {
-      max-width: 700px;
-      margin: 0.5rem auto 0;
-      color: var(--text-muted);
-      font-size: 0.98rem;
-    }
-
-    .section-header {
-      max-width: 1100px;
-      margin: 3rem auto 1.5rem;
-      padding: 0 1.5rem;
-    }
-
-    /* NEW: tighten spacing for Thesis Committee section */
-    .mentors-list + .section-header {
-      margin-top: 1.5rem;
-    }
-
-    .section-header h2 {
-      font-size: 1.55rem;
-      font-weight: 700;
-      margin-bottom: 0.3rem;
-    }
-
-    .section-header p {
-      color: var(--text-muted);
-      margin-top: 0.2rem;
-      max-width: 650px;
-    }
-
-    .mentors-list {
-      max-width: 1100px;
-      margin: 0 auto 3rem;
-      padding: 0 1.5rem 3rem;
-      display: flex;
-      flex-direction: column;
-      gap: 2.5rem;
-    }
-
-    .mentor-row {
-      display: flex;
-      gap: 2rem;
-      align-items: flex-start;
-      background-color: var(--card-bg);
-      border-radius: 1.5rem;
-      padding: 1.75rem 2rem;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
-    }
-
-    .mentor-image-wrapper {
-      flex-shrink: 0;
-      width: 135px;
-      height: 135px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 3px solid #ffffff;
-      box-shadow: 0 0 0 3px #e0eee9;
-    }
-
-    .mentor-image-wrapper img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .mentor-content {
-      flex: 1;
-      font-size: 0.95rem;
-    }
-
-    .mentor-name {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 0.15rem;
-    }
-
-    .mentor-title,
-    .mentor-dept {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
-
-    .mentor-dept {
-      margin-bottom: 0.75rem;
-    }
-
-    .mentor-section-title {
-      margin-top: 0.9rem;
-      margin-bottom: 0.25rem;
-      font-size: 0.9rem;
-      font-weight: 600;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .mentor-body p + p {
-      margin-top: 0.45rem;
-    }
-
-    @media (max-width: 800px) {
-      .mentor-row {
-        flex-direction: column;
-        padding: 1.5rem 1.4rem;
-      }
-
-      .mentor-image-wrapper {
-        margin-bottom: 1rem;
-      }
-
-      .page-hero h1 {
-        font-size: 1.7rem;
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -153,7 +12,7 @@
   <div class="container navbar">
     <a class="brand" href="index.html">Trevor Bush</a>
     <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
-      ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
+      ☰ <span>Menu</span>
     </button>
     <nav class="navlinks" id="navlinks">
       <a href="index.html">Home</a>
@@ -166,196 +25,165 @@
   </div>
 </header>
 
-<main>
+<main class="mentors-page">
 
-  <section class="page-hero">
-    <h1>Mentors</h1>
-    <p>
-      My scientific training is shaped by complementary mentorship in lipid systems metabolism,
-      quantitative multi-omics mass spectrometry, multi-target herbal pharmacology,
-      and predictive tissue systems biology.
-    </p>
+  <section class="mentors-hero">
+    <div class="container">
+      <h1>Mentors</h1>
+      <p>
+        My scientific training is shaped by complementary mentorship in lipid systems metabolism,
+        quantitative multi-omics mass spectrometry, multi-target herbal pharmacology,
+        and predictive tissue systems biology.
+      </p>
+    </div>
   </section>
 
-  <!-- PRIMARY MENTOR -->
-  <section class="section-header">
-    <h2>Primary Mentor</h2>
-    <p>My PI and primary scientific home at Yale.</p>
-  </section>
+  <div class="container">
 
-  <section class="mentors-list">
-
-    <!-- Zhao -->
-    <article class="mentor-row">
-      <div class="mentor-image-wrapper">
-        <img src="assets/xiaoai-zhao.jpg" alt="Xiaoai Zhao" />
+    <!-- PRIMARY MENTOR -->
+    <section class="mentors-section">
+      <div class="mentors-section-header">
+        <h2>Primary Mentor</h2>
+        <p>My PI and primary scientific home at Yale.</p>
       </div>
-      <div class="mentor-content">
-        <h2 class="mentor-name">Xiaoai Zhao</h2>
-        <p class="mentor-title">Assistant Professor</p>
-        <p class="mentor-dept">
-          Departments of Neuroscience and Comparative Medicine, Yale School of Medicine
-        </p>
 
-        <div class="mentor-body">
-          <h3 class="mentor-section-title">Research Focus</h3>
-          <p>
-            Dr. Zhao’s lab investigates the functional roles of complex membrane lipids
-            in cellular and organismal physiology. Her group studies how phospholipid
-            and sphingolipid composition regulates cellular processes, organelle function,
-            and tissue integrity during normal physiology, aging, and age-related disease.
-          </p>
-          <p>
-            The lab integrates advanced mass spectrometry–based lipidomics, organelle-resolved
-            lipid profiling, and technology development to uncover how dynamic lipid remodeling
-            contributes to cellular stress responses and systemic metabolic regulation.
-          </p>
+      <div class="mentor-list">
+        <article class="mentor-card">
+          <img class="mentor-photo" src="assets/xiaoai-zhao.jpg" alt="Xiaoai Zhao" />
+          <div class="mentor-info">
+            <h3 class="mentor-name">Xiaoai Zhao</h3>
+            <p class="mentor-title-text">Assistant Professor</p>
+            <p class="mentor-dept">Departments of Neuroscience and Comparative Medicine, Yale School of Medicine</p>
 
-          <h3 class="mentor-section-title">Role in My Training</h3>
-          <p>
-            My doctoral focus within Dr. Zhao’s lab centers on <strong>complex lipids in systems metabolism</strong>.
-            I investigate how lipid remodeling contributes to tissue–tissue communication and
-            organismal metabolic regulation across aging and chronic disease.
-          </p>
-          <p>
-            Dr. Zhao provides rigorous training in quantitative mass spectrometry–based lipidomics,
-            lipid metabolite tracing, and enzymatic pathway inference, shaping how I define lipid
-            effector networks at the systems level and integrate them into multi-omic models.
-          </p>
-        </div>
+            <p class="mentor-section-label">Research Focus</p>
+            <p class="mentor-body-text">
+              Dr. Zhao's lab investigates the functional roles of complex membrane lipids in cellular and
+              organismal physiology. Her group studies how phospholipid and sphingolipid composition regulates
+              cellular processes, organelle function, and tissue integrity during normal physiology, aging, and
+              age-related disease.
+            </p>
+            <p class="mentor-body-text">
+              The lab integrates advanced mass spectrometry–based lipidomics, organelle-resolved lipid profiling,
+              and technology development to uncover how dynamic lipid remodeling contributes to cellular stress
+              responses and systemic metabolic regulation.
+            </p>
+
+            <p class="mentor-section-label">Role in My Training</p>
+            <p class="mentor-body-text">
+              My doctoral focus within Dr. Zhao's lab centers on <strong>complex lipids in systems metabolism</strong>.
+              I investigate how lipid remodeling contributes to tissue–tissue communication and organismal metabolic
+              regulation across aging and chronic disease.
+            </p>
+            <p class="mentor-body-text">
+              Dr. Zhao provides rigorous training in quantitative mass spectrometry–based lipidomics, lipid metabolite
+              tracing, and enzymatic pathway inference, shaping how I define lipid effector networks at the systems level.
+            </p>
+          </div>
+        </article>
       </div>
-    </article>
+    </section>
 
-  </section>
-
-  <!-- COMMITTEE -->
-  <section class="section-header">
-    <h2>Thesis Committee</h2>
-    <p>
-      Faculty guiding my dissertation through complementary expertise in herbal pharmacology,
-      quantitative proteomics and lipidomics, spatial omics, and predictive systems biology.
-    </p>
-  </section>
-
-  <section class="mentors-list">
-
-    <!-- Cheng -->
-    <article class="mentor-row">
-      <div class="mentor-image-wrapper">
-        <img src="assets/yung-chi-cheng.jpg" alt="Yung-Chi Cheng" />
+    <!-- THESIS COMMITTEE -->
+    <section class="mentors-section">
+      <div class="mentors-section-header">
+        <h2>Thesis Committee</h2>
+        <p>Faculty guiding my dissertation through complementary expertise in herbal pharmacology,
+        quantitative proteomics and lipidomics, spatial omics, and predictive systems biology.</p>
       </div>
-      <div class="mentor-content">
-        <h2 class="mentor-name">Yung-Chi Cheng</h2>
-        <p class="mentor-title">Henry Bronson Professor of Pharmacology</p>
-        <p class="mentor-dept">
-          Department of Pharmacology, Yale School of Medicine
-        </p>
 
-        <div class="mentor-body">
-          <h3 class="mentor-section-title">Research Focus</h3>
-          <p>
-            Dr. Cheng is a pioneer in antiviral and anticancer drug development and a global
-            leader in traditional Chinese medicine. His work applies rigorous pharmacology
-            and quality-control frameworks to multi-component herbal formulations,
-            emphasizing polypharmacology and network-level mechanisms of action.
-          </p>
+      <div class="mentor-list">
 
-          <h3 class="mentor-section-title">Role in My Training</h3>
-          <p>
-            Dr. Cheng guides my development of multi-target treatments derived from herbal medicine.
-            He provides mentorship in formulation design, pharmacological validation,
-            and mechanistic analysis of polypharmacological and synergistic herbal interventions
-            within a network pharmacology framework.
-          </p>
-        </div>
+        <article class="mentor-card">
+          <img class="mentor-photo" src="assets/yung-chi-cheng.jpg" alt="Yung-Chi Cheng" />
+          <div class="mentor-info">
+            <h3 class="mentor-name">Yung-Chi Cheng</h3>
+            <p class="mentor-title-text">Henry Bronson Professor of Pharmacology</p>
+            <p class="mentor-dept">Department of Pharmacology, Yale School of Medicine</p>
+
+            <p class="mentor-section-label">Research Focus</p>
+            <p class="mentor-body-text">
+              Dr. Cheng is a pioneer in antiviral and anticancer drug development and a global leader in
+              traditional Chinese medicine. His work applies rigorous pharmacology and quality-control frameworks
+              to multi-component herbal formulations, emphasizing polypharmacology and network-level mechanisms of action.
+            </p>
+
+            <p class="mentor-section-label">Role in My Training</p>
+            <p class="mentor-body-text">
+              Dr. Cheng guides my development of multi-target treatments derived from herbal medicine. He provides
+              mentorship in formulation design, pharmacological validation, and mechanistic analysis of
+              polypharmacological and synergistic herbal interventions within a network pharmacology framework.
+            </p>
+          </div>
+        </article>
+
+        <article class="mentor-card">
+          <img class="mentor-photo" src="assets/yansheng-liu.jpg" alt="Yansheng Liu" />
+          <div class="mentor-info">
+            <h3 class="mentor-name">Yansheng Liu</h3>
+            <p class="mentor-title-text">Associate Professor</p>
+            <p class="mentor-dept">Department of Pharmacology &amp; Yale Cancer Center</p>
+
+            <p class="mentor-section-label">Research Focus</p>
+            <p class="mentor-body-text">
+              Dr. Liu's lab develops quantitative mass spectrometry and bioinformatic frameworks to define
+              proteome dynamics, protein abundance, turnover, PTMs, and phosphoproteomic signaling states.
+              His group integrates DIA-MS, lipidomics, and MALDI-based spatial omics to construct spatially
+              organized multi-omic network models.
+            </p>
+
+            <p class="mentor-section-label">Role in My Training</p>
+            <p class="mentor-body-text">
+              Dr. Liu provides complementary mass spectrometry expertise across proteomics and lipidomics.
+              He guides my development of DIA-MS workflows, PTM and phosphoproteomic analysis, multi-omic
+              bioinformatic integration, and MALDI spatial omics approaches for quantitative and spatial
+              modeling of lipid–protein networks.
+            </p>
+          </div>
+        </article>
+
+        <article class="mentor-card">
+          <img class="mentor-photo" src="assets/hattie-chung.jpg" alt="Hattie Chung" />
+          <div class="mentor-info">
+            <h3 class="mentor-name">Hattie Chung</h3>
+            <p class="mentor-title-text">Assistant Professor</p>
+            <p class="mentor-dept">Department of Pathology &amp; Center for Systems Biology, Harvard Medical School</p>
+
+            <p class="mentor-section-label">Research Focus</p>
+            <p class="mentor-body-text">
+              Dr. Chung studies cellular heterogeneity and tissue homeostasis through systems biology.
+              Her lab seeks to define the minimal cell–cell circuit motifs that sustain stable, adaptive,
+              and resilient tissues across development, physiological fluctuation, aging, and disease.
+            </p>
+            <p class="mentor-body-text">
+              By integrating spatial genomics, machine learning, and mechanistic modeling, her group aims
+              to uncover the "grammar" of cellular interactions that governs tissue remodeling, resilience, and failure.
+            </p>
+
+            <p class="mentor-section-label">Role in My Training</p>
+            <p class="mentor-body-text">
+              Dr. Chung contributes predictive systems-biology frameworks that shape how I interpret spatial
+              and multi-omic data in terms of tissue-level circuits. Her perspective informs how lipid–protein
+              network remodeling and herbal interventions are contextualized within higher-order cell–cell
+              interaction motifs governing tissue resilience and disease progression.
+            </p>
+          </div>
+        </article>
+
       </div>
-    </article>
+    </section>
 
-    <!-- Liu -->
-    <article class="mentor-row">
-      <div class="mentor-image-wrapper">
-        <img src="assets/yansheng-liu.jpg" alt="Yansheng Liu" />
-      </div>
-      <div class="mentor-content">
-        <h2 class="mentor-name">Yansheng Liu</h2>
-        <p class="mentor-title">Associate Professor</p>
-        <p class="mentor-dept">
-          Department of Pharmacology & Yale Cancer Center
-        </p>
-
-        <div class="mentor-body">
-          <h3 class="mentor-section-title">Research Focus</h3>
-          <p>
-            Dr. Liu’s lab develops quantitative mass spectrometry and bioinformatic
-            frameworks to define proteome dynamics, protein abundance, turnover,
-            PTMs, and phosphoproteomic signaling states. His group integrates DIA-MS,
-            lipidomics, and MALDI-based spatial omics to construct spatially organized
-            multi-omic network models.
-          </p>
-
-          <h3 class="mentor-section-title">Role in My Training</h3>
-          <p>
-            Dr. Liu provides complementary mass spectrometry expertise across proteomics
-            and lipidomics. He guides my development of DIA-MS workflows, PTM and
-            phosphoproteomic analysis, multi-omic bioinformatic integration, and MALDI
-            spatial omics approaches that enable quantitative and spatial modeling
-            of lipid–protein networks.
-          </p>
-        </div>
-      </div>
-    </article>
-
-    <!-- Chung -->
-    <article class="mentor-row">
-      <div class="mentor-image-wrapper">
-        <img src="assets/hattie-chung.jpg" alt="Hattie Chung" />
-      </div>
-      <div class="mentor-content">
-        <h2 class="mentor-name">Hattie Chung</h2>
-        <p class="mentor-title">Assistant Professor</p>
-        <p class="mentor-dept">
-          Department of Pathology & Center for Systems Biology, Harvard Medical School
-        </p>
-
-        <div class="mentor-body">
-          <h3 class="mentor-section-title">Research Focus</h3>
-          <p>
-            Dr. Chung studies cellular heterogeneity and tissue homeostasis through systems biology.
-            Her lab seeks to define the minimal cell–cell circuit motifs that sustain stable,
-            adaptive, and resilient tissues across development, physiological fluctuation,
-            aging, and disease.
-          </p>
-          <p>
-            By integrating spatial genomics, machine learning, and mechanistic modeling,
-            her group aims to uncover the “grammar” of cellular interactions that governs
-            tissue remodeling, resilience, and failure.
-          </p>
-
-          <h3 class="mentor-section-title">Role in My Training</h3>
-          <p>
-            Dr. Chung contributes predictive systems-biology frameworks that shape how I
-            interpret spatial and multi-omic data in terms of tissue-level circuits.
-            Her perspective informs how lipid–protein network remodeling and herbal
-            interventions are contextualized within higher-order cell–cell interaction
-            motifs governing tissue resilience and disease progression.
-          </p>
-        </div>
-      </div>
-    </article>
-
-  </section>
+  </div>
 
 </main>
 
-<div class="footer">
-  <div class="container">
-    © <span id="year"></span> Trevor Bush
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Trevor Bush</span>
+    <span>© <span id="year"></span> · Yale University · New Haven, CT</span>
   </div>
-</div>
+</footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
