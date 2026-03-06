@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications | Trevor Bush</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">Trevor Bush</a>
+    <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
+      ☰ <span>Menu</span>
+    </button>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html">Education</a>
+      <a href="mentors.html">Mentors</a>
+      <a href="publications.html" aria-current="page">Publications</a>
+      <a href="CV.html">CV</a>
+      <a href="connect.html">Let's Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main class="pubs-page">
+  <div class="container">
+
+    <div class="pubs-page-header">
+      <p class="eyebrow">Scholarly Work</p>
+      <h1>Publications</h1>
+      <p class="pubs-note">
+        Selected peer-reviewed publications. My name is highlighted in each author list.
+        For a complete and up-to-date record, see my profiles below.
+      </p>
+    </div>
+
+    <!-- External profile links -->
+    <div class="pubs-profiles">
+      <a class="profile-link" href="https://scholar.google.com" target="_blank" rel="noopener">
+        🎓 Google Scholar ↗
+      </a>
+      <a class="profile-link" href="https://www.ncbi.nlm.nih.gov/search/research-articles/?query=Trevor+Bush" target="_blank" rel="noopener">
+        🔬 PubMed ↗
+      </a>
+    </div>
+
+    <!-- 2024 -->
+    <div class="pub-year-group">
+      <h2 class="pub-year-label">2024</h2>
+      <div class="pub-list">
+
+        <article class="pub-card">
+          <div class="pub-card-left">
+            <span class="pub-type-badge">📄 Research Article</span>
+            <h3 class="pub-title">
+              An O-methylflavone from <em>Artemisia afra</em> kills non-replicating hypoxic
+              <em>Mycobacterium tuberculosis</em>
+            </h3>
+            <p class="pub-authors">
+              Kellogg JJ, Alonso MN, Jordan RT, Xiao J, Cafiero JH,
+              <strong>Bush T</strong>, Chen X, Towler M, Weathers P, Shell SS
+            </p>
+            <p class="pub-journal">
+              Journal of Ethnopharmacology
+              <span>· Vol. 333, 118500 · Oct 28, 2024</span>
+            </p>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link doi"
+               href="https://doi.org/10.1016/j.jep.2024.118500"
+               target="_blank" rel="noopener">
+              DOI ↗
+            </a>
+            <a class="pub-link"
+               href="https://pubmed.ncbi.nlm.nih.gov/38944359/"
+               target="_blank" rel="noopener">
+              PubMed ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Placeholder note -->
+    <p style="font-size:0.88rem; color:var(--muted); margin-top: 8px;">
+      Additional publications will be added as they are accepted. Last updated March 2026.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Trevor Bush</span>
+    <span>© <span id="year"></span> · Yale University · New Haven, CT</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
