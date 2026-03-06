@@ -11,11 +11,9 @@
 <header>
   <div class="container navbar">
     <a class="brand" href="index.html">Trevor Bush</a>
-
     <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
-      ☰ <span style="font-size:0.92rem;color:#555;">Menu</span>
+      ☰ <span>Menu</span>
     </button>
-
     <nav class="navlinks" id="navlinks">
       <a href="index.html" aria-current="page">Home</a>
       <a href="research.html">Research</a>
@@ -27,53 +25,84 @@
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
   <div class="hero-inner">
     <img class="hero-avatar" src="assets/profile.jpg" alt="Trevor Bush headshot">
-
     <h1>Trevor Jeffrey Bush</h1>
-
-    <p>
-      Systems Pharmacologist
-    </p>
+    <p class="hero-subtitle">Systems Pharmacologist</p>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll</span>
   </div>
 </section>
 
-<main class="container">
-
-  <h2 class="section-title">About Me</h2>
-  <p>
-    Before pursuing my PhD in Pharmacology at Yale University, I completed my B.S. in Biotechnology and Biochemistry at Worcester Polytechnic Insitute. Under the mentorship of Pamela Weathers, I focused on the therapeutic potential of 𝘈𝘳𝘵𝘦𝘮𝘦𝘴𝘪𝘢 𝘢𝘯𝘯𝘶𝘢 and 𝘈. 𝘢𝘧𝘳𝘢. 
-    Using transcriptomic and proteomic techniques, I studied these plants and their secondary metabolites and derivatives for their ability to treat both infectious (e.g., tuberculosis) and non-communicable diseases (e.g., dermal fibrosis) 𝘪𝘯 𝘷𝘪𝘵𝘳𝘰. 
-    My work also included development of plant-based decellularized scaffolds for modeling disease in 3D.
-  </p>
-  <p>
-    Now, my research operates broadly in two complementary directions.
-    First, I use a multi-omics systems biology approach that integrates transcriptomics, proteomics, and lipidomics to understand the systemic contribution of lipid composition and complex lipids in normal physiology, aging and disease.
-    Second, I apply network pharmacology to investigate the polypharmacological and synergistic mechanisms by which natural products modulate multiple molecular targets and lipid composition simultaneously to restore tissue resilience and promote regeneration.
-  </p>
-
-  <h2 class="section-title">Let’s Connect!</h2>
-  <p>Email: <a href="mailto:trevor.bush@yale.edu">trevor.bush@yale.edu</a></p>
-  <p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/in/trevor-bush" target="_blank" rel="noopener">
-      www.linkedin.com/in/trevor-bush
-    </a>
-  </p>
-
-</main>
-
-<div class="footer">
+<!-- ABOUT -->
+<section class="about-section">
   <div class="container">
-    © <span id="year"></span> Trevor Bush
+    <div class="about-grid">
+
+      <div class="about-left">
+        <p class="eyebrow">About Me</p>
+        <h2 class="about-heading">
+          Mapping <em>lipid–protein</em> networks in aging &amp; disease
+        </h2>
+        <div class="about-pills">
+          <span class="about-pill">Network Pharmacology</span>
+          <span class="about-pill">Multi-Omics</span>
+          <span class="about-pill">Natural Products</span>
+          <span class="about-pill">Lipidomics</span>
+          <span class="about-pill">Systems Biology</span>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <p>
+          Before pursuing my PhD in Pharmacology at Yale University, I completed my B.S. in Biotechnology
+          and Biochemistry at Worcester Polytechnic Institute. Under the mentorship of Pamela Weathers,
+          I focused on the therapeutic potential of <em>Artemisia annua</em> and <em>A. afra</em>.
+          Using transcriptomic and proteomic techniques, I studied these plants and their secondary
+          metabolites and derivatives for their ability to treat both infectious (e.g., tuberculosis)
+          and non-communicable diseases (e.g., dermal fibrosis) <em>in vitro</em>.
+          My work also included development of plant-based decellularized scaffolds for modeling disease in 3D.
+        </p>
+        <p>
+          Now, my research operates broadly in two complementary directions.
+          First, I use a multi-omics systems biology approach that integrates transcriptomics, proteomics,
+          and lipidomics to understand the systemic contribution of lipid composition and complex lipids
+          in normal physiology, aging and disease.
+          Second, I apply network pharmacology to investigate the polypharmacological and synergistic
+          mechanisms by which natural products modulate multiple molecular targets and lipid composition
+          simultaneously to restore tissue resilience and promote regeneration.
+        </p>
+
+        <hr class="about-divider">
+
+        <div class="connect-row">
+          <a href="mailto:trevor.bush@yale.edu" class="connect-link primary">
+            ✉ trevor.bush@yale.edu
+          </a>
+          <a href="https://www.linkedin.com/in/trevor-bush" target="_blank" rel="noopener" class="connect-link secondary">
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Trevor Bush</span>
+    <span>© <span id="year"></span> · Yale University · New Haven, CT</span>
+  </div>
+</footer>
 
 <script src="script.js"></script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
