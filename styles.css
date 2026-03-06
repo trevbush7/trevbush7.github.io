@@ -32,7 +32,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html {
   scroll-behavior: smooth;
-  background: #1a1a18; /* matches footer — prevents cream gap on overscroll */
+  background: #1a1a18;
 }
 
 body {
@@ -49,7 +49,6 @@ body {
 
 main { flex: 1 0 auto; }
 
-/* Ensure short pages push footer to bottom */
 .pubs-page,
 .edu-page,
 .mentors-page,
@@ -630,6 +629,12 @@ main.research-main {
   color: var(--ink);
 }
 
+.edu-logo-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
 /* ============================================================
    MENTORS PAGE
    ============================================================ */
@@ -948,7 +953,6 @@ main.research-main {
   max-width: 560px;
 }
 
-/* Year group divider */
 .pub-year-group {
   margin-bottom: 44px;
 }
@@ -969,7 +973,6 @@ main.research-main {
   gap: 14px;
 }
 
-/* Individual publication card */
 .pub-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -1082,7 +1085,6 @@ main.research-main {
   color: #fff;
 }
 
-/* Scholar / ORCID strip */
 .pubs-profiles {
   display: flex;
   flex-wrap: wrap;
