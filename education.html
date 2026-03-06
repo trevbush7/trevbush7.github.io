@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
 <header>
   <div class="container navbar">
     <a class="brand" href="index.html">Trevor Bush</a>
@@ -25,17 +24,13 @@
     </nav>
   </div>
 </header>
-
 <main class="edu-page">
   <div class="container">
-
     <div class="edu-page-header">
       <p class="eyebrow">Academic Journey</p>
       <h1>Education</h1>
     </div>
-
     <div class="edu-list">
-
       <!-- Yale -->
       <article class="edu-card">
         <div class="edu-card-main">
@@ -54,10 +49,9 @@
           </div>
         </div>
         <div class="edu-logo-block">
-          <div class="edu-logo-circle">Y</div>
+          <img src="assets/yaleicon.png" alt="Yale University" class="edu-logo-img" />
         </div>
       </article>
-
       <!-- WPI -->
       <article class="edu-card">
         <div class="edu-card-main">
@@ -77,22 +71,18 @@
           </div>
         </div>
         <div class="edu-logo-block">
-          <div class="edu-logo-circle">WPI</div>
+          <img src="assets/wpilogo.png" alt="Worcester Polytechnic Institute" class="edu-logo-img" />
         </div>
       </article>
-
     </div>
-
   </div>
 </main>
-
 <footer class="site-footer">
   <div class="container footer-inner">
     <span class="footer-brand">Trevor Bush</span>
     <span>© <span id="year"></span> · Yale University · New Haven, CT</span>
   </div>
 </footer>
-
 <script src="script.js"></script>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
