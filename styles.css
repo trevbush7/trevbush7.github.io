@@ -550,11 +550,18 @@ main.research-main {
   line-height: 1.7;
 }
 
-.accordion-body li strong {
+/* Only the FIRST strong in each li acts as a block heading */
+.accordion-body li > strong:first-child {
   display: block;
   color: var(--ink);
   font-weight: 600;
   margin-bottom: 3px;
+}
+
+/* All other strongs (inline) stay inline */
+.accordion-body li strong {
+  color: var(--ink);
+  font-weight: 600;
 }
 
 .accordion-schematic {
