@@ -583,10 +583,18 @@ main.research-main {
 }
 
 .accordion-schematic-img--sm {
-  width: 110px;
-  min-width: 110px;
-  max-width: 110px;
+  width: 160px;
+  min-width: 160px;
+  max-width: 160px;
   margin: 0;
+  object-fit: contain;
+  height: auto;
+}
+
+.accordion-schematic-img--cells {
+  max-width: 220px;
+  height: auto;
+  object-fit: contain;
 }
 
 .accordion-schematic-caption {
