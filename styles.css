@@ -377,6 +377,7 @@ main.research-main {
   padding: 0 24px;
   display: grid;
   grid-template-columns: 1fr 1.65fr;
+  grid-template-rows: auto auto;
   gap: 80px;
   align-items: start;
 }
@@ -415,6 +416,50 @@ main.research-main {
 }
 .research-hero-right p:last-child { margin-bottom: 0; }
 .research-hero-right strong { color: var(--ink); font-weight: 600; }
+
+/* Schematic — spans both text columns */
+.research-hero-schematic {
+  grid-column: 1 / -1;
+  padding-top: 12px;
+  margin-top: -28px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.research-schematic-img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  display: block;
+  margin: 0 auto;
+}
+
+.research-schematic-caption {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.research-schematic-cite-link {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 4px;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.research-schematic-cite-link:hover { opacity: 0.75; }
 
 /* Accordion */
 .research-accordion-wrap {
@@ -510,6 +555,139 @@ main.research-main {
   color: var(--ink);
   font-weight: 600;
   margin-bottom: 3px;
+}
+
+.accordion-schematic {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--green-mid);
+  text-align: center;
+}
+
+.accordion-schematic--row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+}
+
+.accordion-schematic-img {
+  width: 100%;
+  max-width: 680px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  background: var(--white);
+  display: block;
+  margin: 0 auto;
+}
+
+.accordion-schematic-img--sm {
+  width: 110px;
+  min-width: 110px;
+  max-width: 110px;
+  margin: 0;
+}
+
+.accordion-schematic-caption {
+  margin-top: 9px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;
+  display: block;
+}
+
+.accordion-schematic-caption--left {
+  margin: 0;
+  max-width: none;
+  flex: 1;
+}
+
+.accordion-cite-link {
+  display: inline-block;
+  margin-top: 7px;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.accordion-cite-link--block {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.accordion-cite-link--block:hover { opacity: 0.75; }
+
+.accordion-schematic--lipidsig {
+  text-align: left;
+}
+
+.accordion-schematic-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.lipidsig-panels {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.lipidsig-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lipidsig-panel .accordion-schematic-img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.lipidsig-panel .accordion-schematic-caption {
+  margin: 0;
+  max-width: none;
+  text-align: left;
+}
+
+@media (max-width: 680px) {
+  .lipidsig-panels {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .accordion-schematic--row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .accordion-schematic-img--sm {
+    width: 90px;
+    min-width: 90px;
+    max-width: 90px;
+  }
+  .accordion-schematic-caption--left {
+    text-align: center;
+  }
 }
 
 /* ============================================================
@@ -913,6 +1091,8 @@ main.research-main {
   .about-grid { grid-template-columns: 1fr; gap: 28px; }
 
   .research-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+
+  .research-hero-schematic { margin-top: 0; }
 
   .edu-card { grid-template-columns: 1fr; padding: 26px 22px; }
 
