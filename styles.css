@@ -417,6 +417,120 @@ main.research-main {
 .research-hero-right p:last-child { margin-bottom: 0; }
 .research-hero-right strong { color: var(--ink); font-weight: 600; }
 
+/* Hero content blocks */
+.hero-block {
+  margin-bottom: 28px;
+}
+
+.hero-block-label {
+  font-size: 0.68rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: var(--green) !important;
+  margin-bottom: 10px !important;
+}
+
+.hero-block p:not(.hero-block-label) {
+  font-size: 1rem;
+  margin-bottom: 14px;
+  color: var(--ink-soft);
+}
+
+/* WE Medicine callout card */
+.we-medicine-card {
+  background: linear-gradient(135deg, #0f3d2e 0%, #1a5c45 60%, #1d6f5b 100%);
+  border-radius: var(--r-md);
+  padding: 28px 30px 24px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(29, 111, 91, 0.22);
+}
+
+.we-medicine-card::before {
+  content: 'WE';
+  position: absolute;
+  right: -8px;
+  top: -18px;
+  font-family: var(--serif);
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.we-medicine-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.we-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.we-medicine-label {
+  font-family: var(--serif);
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.we-medicine-body {
+  font-size: 0.93rem !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  margin-bottom: 12px !important;
+  line-height: 1.75 !important;
+}
+
+.we-medicine-body strong {
+  color: #fff !important;
+  font-weight: 600 !important;
+}
+
+.we-medicine-body:last-of-type {
+  margin-bottom: 16px !important;
+}
+
+.we-medicine-cite {
+  font-size: 0.75rem !important;
+  color: rgba(255, 255, 255, 0.42) !important;
+  font-style: italic;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 12px;
+  margin-bottom: 0 !important;
+  line-height: 1.6 !important;
+}
+
+.we-medicine-cite a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-style: normal;
+}
+
+.we-medicine-cite a:hover {
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+}
+
 /* Schematic — spans both text columns */
 .research-hero-schematic {
   grid-column: 1 / -1;
@@ -550,18 +664,11 @@ main.research-main {
   line-height: 1.7;
 }
 
-/* Only the FIRST strong in each li acts as a block heading */
-.accordion-body li > strong:first-child {
+.accordion-body li strong {
   display: block;
   color: var(--ink);
   font-weight: 600;
   margin-bottom: 3px;
-}
-
-/* All other strongs (inline) stay inline */
-.accordion-body li strong {
-  color: var(--ink);
-  font-weight: 600;
 }
 
 .accordion-schematic {
@@ -599,7 +706,7 @@ main.research-main {
 }
 
 .accordion-schematic-img--cells {
-  max-width: 680px;
+  max-width: 220px;
   height: auto;
   object-fit: contain;
 }
