@@ -359,6 +359,46 @@
             is defined not only by single endpoints such as viability, but by cooperative
             normalization of lipid, protein, and transcriptional signatures associated
             with aging and chronic inflammation.
+            <br><br>
+            A central challenge in this work is identifying <em>which compounds</em> within
+            a complex mixture are responsible for a synergistic effect — without prior knowledge
+            of the active constituents. Classical metabolomics approaches fail here because they
+            treat each compound's abundance independently, missing the combinatorial signal
+            entirely. <strong>Interaction metabolomics</strong> addresses this directly by
+            augmenting the standard LC-MS feature matrix with compound interaction terms (CITs)
+            — synthetic variables calculated as the product of the peak intensities of each pair
+            of detected features. When PLS regression is applied to this expanded matrix,
+            the CITs with the highest selectivity ratios identify the specific compound pairs
+            whose co-abundance tracks with biological activity, pinpointing putative synergists
+            from within an unfractionated or partially fractionated mixture. This provides
+            the upstream compound-level identification that feeds directly into CETSA-MS
+            proteome-wide target deconvolution: interaction metabolomics reveals
+            <em>which compounds</em> are synergizing; CETSA-MS then reveals
+            <em>which proteins</em> those compounds collectively perturb.
+            <div class="accordion-schematic">
+              <img
+                src="assets/interaction-metabolomics-schematic.png"
+                alt="Interaction metabolomics workflow: LC-MS feature matrix augmented with compound interaction terms (CITs) fed into PLS regression to identify putative synergists — piperine and berberine — from a natural product mixture"
+                class="accordion-schematic-img"
+              />
+              <p class="accordion-schematic-caption">
+                Interaction metabolomics workflow — the standard LC-MS feature matrix is
+                expanded with compound interaction terms (CITs), each calculated as the
+                product of peak intensities for a pair of detected ions. PLS regression
+                on the augmented matrix identifies CITs whose co-abundance tracks with
+                biological activity, predicting putative synergists (here, piperine and
+                berberine) that classical metabolomics fails to detect.
+                <br>
+                <span class="apa-label">Figure from:</span>
+                Vidar, W. S., Baumeister, T. U. H., Caesar, L. K., Kellogg, J. J., Todd, D. A., Linington, R. G., Kvalheim, O. M., &amp; Cech, N. B. (2023). Interaction metabolomics to discover synergists in natural product mixtures. <em>Journal of Natural Products</em>, <em>86</em>(3), 655–671.
+                <a
+                  href="https://doi.org/10.1021/acs.jnatprod.2c00518"
+                  target="_blank"
+                  rel="noopener"
+                  class="accordion-cite-link"
+                >https://doi.org/10.1021/acs.jnatprod.2c00518 ↗</a>
+              </p>
+            </div>
           </li>
           <li>
             <strong>Spatially resolved intervention mapping</strong>
