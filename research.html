@@ -44,22 +44,23 @@
 
       <div class="research-hero-right">
         <p>
-          My work is grounded in <strong>network pharmacology</strong>: defining how
-          lipid composition, protein signaling networks, and transcriptional programs
-          become dysregulated in aging and chronic inflammatory disease, and designing
-          multi-target interventions that restore these networks — and their spatial
-          organization — toward healthier system-level states.
+          My research operates in two complementary arms. The first uses
+          <strong>multi-omics systems biology</strong> — integrating lipidomics,
+          proteomics, phosphoproteomics, RNA sequencing, and spatial omics — to map
+          how lipid composition and lipid–protein interaction networks reorganize
+          across tissues and cell types during aging and chronic inflammatory disease.
+          The goal is a quantitative, spatially resolved picture of where and how
+          these networks fail.
         </p>
         <p>
-          I use a <strong>network-guided phenotypic strategy</strong>. First, I map
-          lipid–protein network dysfunction using multi-omics profiling. Natural
-          products and herbal combinations are then screened for their ability to
-          restore these system-level phenotypes. Proteome-wide structural and stability
-          profiling platforms (CETSA-MS, LiP-MS, PELSA, and related approaches) are
-          applied under mixture conditions to define how multi-component formulas
-          perturb protein networks. These measurements are integrated with
-          <strong>lipidomics, proteomics, RNA sequencing, and spatial omics</strong>
-          to resolve distributed mechanisms of polypharmacology and emergent synergy.
+          The second applies <strong>herbal systems pharmacology</strong> to those
+          network maps. Rather than optimizing a single target, I study how
+          multi-component natural products perturb protein networks simultaneously —
+          using proteome-wide thermal and structural stability profiling (CETSA-MS,
+          LiP-MS, PELSA) under mixture conditions to resolve the distributed
+          mechanisms of polypharmacology and emergent synergy. Together, the two arms
+          form a closed loop: define how networks fail, then identify interventions
+          that restore them.
         </p>
       </div>
 
@@ -102,14 +103,15 @@
 
         <h3>Effector-Layer and Spatial Mapping of Lipid–Protein Networks</h3>
         <p>
-          I use a <strong>multi-omics systems biology framework</strong> to map how
-          lipid metabolism and signaling networks reorganize across tissues, cell
-          types, and anatomical niches during normal physiology, aging, and chronic
-          inflammatory disease. This framework integrates
-          <strong>mass spectrometry–based lipidomics and proteomics</strong> with
-          <strong>RNA sequencing, cell-type–resolved profiling, and spatial omics</strong>,
-          allowing regulatory, cellular, and anatomical context to be interpreted
-          together at the network level.
+          Lipid–protein networks are not static — they reorganize across tissues,
+          cell types, and anatomical niches in ways that bulk measurements obscure.
+          Resolving this requires layering modalities: mass spectrometry to quantify
+          what is present and how it is modified, transcriptomics to capture the
+          regulatory programs driving those changes, cell-type isolation to attribute
+          rewiring to specific populations rather than tissue averages, and spatial
+          platforms to preserve the anatomical context in which these changes occur.
+          Each modality answers a different question; the network-level picture emerges
+          from their integration.
         </p>
 
         <ul>
@@ -262,16 +264,15 @@
             <br><br>
             <strong>DBiTplus</strong> extends this spatial layer by co-mapping the
             <strong>transcriptome and multiplexed proteome on the same tissue section</strong>
-            — combining sequencing-based spatial transcriptomics (DBIT-seq) with imaging-based
-            spatial proteomics (CODEX/CellScape multiplexed protein imaging) and H&amp;E staining.
-            A three-stage bioinformatic pipeline processes the spatial proteomic data, annotates
-            cell types via MaxFuse-guided protein-reference matching, and performs imaging-guided
-            deconvolution of spatial transcriptomic spots to generate single-cell-resolved
-            RNA + protein atlases. The result is a unified spatial framework that simultaneously
-            resolves cell identity, transcriptional state, and protein-level signaling within
-            intact tissue architecture — enabling lipid–protein network remodeling to be
-            interpreted not just at the bulk or cell-type level, but within the spatial
-            organization of the tissue itself.
+            — combining DBiT-seq spatial transcriptomics with multiplexed immunofluorescence
+            imaging (CODEX/CellScape) and H&amp;E staining. RNase H-mediated cDNA retrieval
+            preserves tissue integrity after spatial barcoding, enabling high-quality protein
+            imaging on the same section. A three-stage computational pipeline integrates the
+            modalities — segmenting cells, annotating cell types via MaxFuse-guided
+            protein–reference matching, and deconvolving transcriptomic spots into
+            single-cell-resolved atlases — yielding simultaneous resolution of cell identity,
+            transcriptional state, and protein signaling within intact tissue architecture.
+            Compatible with both fresh-frozen and FFPE clinical specimens.
             <div class="accordion-schematic">
               <img
                 src="assets/desi-raman-spatial-lipidomics.png"
@@ -305,14 +306,17 @@
                 class="accordion-schematic-img"
               />
               <p class="accordion-schematic-caption" style="text-align:left; max-width:none; margin-top:10px;">
-                DBiTplus workflow (a) — spatial barcoding enables cDNA retrieval for transcriptome-wide
-                sequencing while preserving the tissue section intact for downstream CODEX/CellScape
-                multiplexed protein imaging and H&amp;E staining, yielding joint RNA, protein, and
-                morphology datasets from a single section. The three-stage bioinformatic pipeline (b)
-                processes spatial proteomic images (cell segmentation, signal extraction, QC, normalization),
-                annotates cell types via MaxFuse-guided protein–reference matching, and performs
-                protein-DBiT image alignment and spot cell-type deconvolution to generate
-                single-cell-resolved spatial transcriptome atlases using Seurat WNN.
+                DBiTplus workflow (a) — after spatial barcoding, RNase H enzymatically retrieves
+                cDNA while preserving tissue integrity, enabling subsequent CODEX/CellScape
+                multiplexed immunofluorescence imaging and H&amp;E staining on the same section,
+                yielding joint RNA, protein, and morphology datasets. The three-stage bioinformatic
+                pipeline (b) performs Mesmer-based cell segmentation, signal extraction, QC and
+                feature normalization (Stage 1); MaxFuse-guided cell-type annotation by
+                protein–reference dataset matching and whole-tissue annotation (Stage 2); and
+                protein–DBiT image co-registration with RCTD-like spot cell-type deconvolution
+                and splitting into pure cell-type sub-spots for single-cell-resolved spatial
+                transcriptome atlasing via Seurat WNN (Stage 3). Compatible with both
+                fresh-frozen and FFPE clinical specimens.
                 Licensed under CC BY 4.0.
                 <br>
                 <span class="apa-label">Figure from:</span>
@@ -329,13 +333,13 @@
         </ul>
 
         <p>
-          Bulk tissue profiling defines organ-level network remodeling; FACS-resolved
-          multi-omics quantifies cell-intrinsic rewiring; and spatial omics preserves
-          tissue architecture, revealing interface- and niche-specific changes that are
-          obscured in homogenates. Integrating these data streams enables network models
-          that explain how lipid remodeling, protein signaling state, and spatial
-          organization jointly determine vulnerability or resilience in aging and chronic
-          inflammatory disease.
+          Each modality contributes a distinct layer: bulk profiling captures
+          organ-level remodeling; FACS-resolved omics attributes changes to specific
+          cell populations; and spatial platforms preserve the tissue architecture
+          that determines which cell–cell interfaces and anatomical niches are most
+          vulnerable. Together they produce network models with enough resolution to
+          identify where dysregulation originates and what interventions are most
+          likely to restore it.
         </p>
 
       </div>
@@ -365,7 +369,10 @@
             proteomic perturbation landscape induced by multi-component herbal formulas.
             Ligand-dependent shifts in thermal stability, conformational accessibility,
             and protein interaction states are quantified across the proteome, capturing
-            both direct binding events and indirect network propagation.
+            both direct binding events and indirect network propagation. These perturbation
+            signatures are then integrated with lipidomic, phosphoproteomic, and RNA-seq
+            data to determine how protein-level changes propagate through lipid metabolic,
+            signaling, and transcriptional circuits.
             <div class="accordion-schematic">
               <img
                 src="assets/cetsa-schematic.png"
@@ -388,12 +395,6 @@
                 >https://doi.org/10.3390/ijms26093940 ↗</a>
               </p>
             </div>
-          </li>
-          <li>
-            <strong>Integration with lipidomics, proteomics, and RNA sequencing</strong>
-            Proteome-wide perturbation data are integrated with lipidomic, phosphoproteomic,
-            and RNA-seq signatures to determine how protein modules propagate through lipid
-            metabolic, signaling, and transcriptional circuits.
           </li>
           <li>
             <strong>Synergy and network-level response profiling</strong>
