@@ -252,12 +252,26 @@
             proteomic changes, linking network remodeling to upstream gene-expression control.
           </li>
           <li>
-            <strong>Spatial omics (MALDI / DESI and related imaging)</strong>
-            Mass spectrometry imaging and related spatial omics platforms are used to
-            map the tissue localization of lipids and proteins within intact organs.
-            These approaches allow direct comparison of molecular organization across
-            physiology, aging, and pathology, and assessment of how candidate interventions
-            shift these patterns toward a younger or healthier phenotype.
+            <strong>Spatial omics (MALDI / DESI, DBiTplus, and related platforms)</strong>
+            Multiple complementary spatial omics platforms are used to map molecular organization
+            within intact tissues at varying levels of resolution and modality coverage.
+            <strong>Mass spectrometry imaging</strong> (MALDI, DESI, and Raman-coupled variants)
+            provides untargeted, label-free mapping of lipid species and small molecules across
+            tissue sections, preserving the spatial distribution of lipid composition changes
+            across physiology, aging, and pathology.
+            <br><br>
+            <strong>DBiTplus</strong> extends this spatial layer by co-mapping the
+            <strong>transcriptome and multiplexed proteome on the same tissue section</strong>
+            — combining sequencing-based spatial transcriptomics (DBIT-seq) with imaging-based
+            spatial proteomics (CODEX/CellScape multiplexed protein imaging) and H&amp;E staining.
+            A three-stage bioinformatic pipeline processes the spatial proteomic data, annotates
+            cell types via MaxFuse-guided protein-reference matching, and performs imaging-guided
+            deconvolution of spatial transcriptomic spots to generate single-cell-resolved
+            RNA + protein atlases. The result is a unified spatial framework that simultaneously
+            resolves cell identity, transcriptional state, and protein-level signaling within
+            intact tissue architecture — enabling lipid–protein network remodeling to be
+            interpreted not just at the bulk or cell-type level, but within the spatial
+            organization of the tissue itself.
             <div class="accordion-schematic">
               <img
                 src="assets/desi-raman-spatial-lipidomics.png"
@@ -280,6 +294,35 @@
                   rel="noopener"
                   class="accordion-cite-link"
                 >https://doi.org/10.1002/advs.202302962 ↗</a>
+              </p>
+            </div>
+
+            <div class="accordion-schematic" style="margin-top: 18px;">
+              <p class="accordion-schematic-label">Spatial multimodal co-mapping — DBiTplus</p>
+              <img
+                src="assets/dbitplus-schematic.png"
+                alt="DBiTplus workflow: tissue barcoding and cDNA retrieval for spatial transcriptomics combined with CODEX/CellScape multiplexed protein imaging on the same section, with three-stage bioinformatic pipeline for cell segmentation, MaxFuse annotation, and imaging-guided spot deconvolution into single-cell-resolved RNA and protein atlases"
+                class="accordion-schematic-img"
+              />
+              <p class="accordion-schematic-caption" style="text-align:left; max-width:none; margin-top:10px;">
+                DBiTplus workflow (a) — spatial barcoding enables cDNA retrieval for transcriptome-wide
+                sequencing while preserving the tissue section intact for downstream CODEX/CellScape
+                multiplexed protein imaging and H&amp;E staining, yielding joint RNA, protein, and
+                morphology datasets from a single section. The three-stage bioinformatic pipeline (b)
+                processes spatial proteomic images (cell segmentation, signal extraction, QC, normalization),
+                annotates cell types via MaxFuse-guided protein–reference matching, and performs
+                protein-DBiT image alignment and spot cell-type deconvolution to generate
+                single-cell-resolved spatial transcriptome atlases using Seurat WNN.
+                Licensed under CC BY 4.0.
+                <br>
+                <span class="apa-label">Figure from:</span>
+                Enninful, A., Zhang, Z., Klymyshyn, D., Ingalls, M., Yang, M., Zong, H., Bai, Z., Farzad, N., Su, G., Baysoy, A., Nam, J., Lu, Y., Bao, S., Deng, S., Zhang, N. R., Braubach, O., Xu, M. L., Ma, Z., &amp; Fan, R. (2026). Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus. <em>Nature Methods</em>, 1–13.
+                <a
+                  href="https://doi.org/10.1038/s41592-025-02948-0"
+                  target="_blank"
+                  rel="noopener"
+                  class="accordion-cite-link"
+                >https://doi.org/10.1038/s41592-025-02948-0 ↗</a>
               </p>
             </div>
           </li>
