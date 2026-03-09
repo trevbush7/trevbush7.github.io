@@ -12,3 +12,17 @@ document.addEventListener("click", (e) => {
     links.classList.remove("open");
   }
 });
+
+// Slide-in animation for motivation cards
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slide-in");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".why-lipids-card, .we-medicine-card").forEach(el => {
+  observer.observe(el);
+});
