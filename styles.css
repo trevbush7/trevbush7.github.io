@@ -632,7 +632,7 @@ main.research-main {
 
 .why-lipids-img {
   width: 100%;
-  max-width: 460px;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.96);
