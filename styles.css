@@ -404,7 +404,7 @@ main.research-main {
 .research-hero-intro p:last-child { margin-bottom: 0; }
 .research-hero-intro strong { color: var(--ink); font-weight: 600; }
 
-/* Two motivation cards side by side */
+/* Two motivation cards stacked vertically */
 .research-motivation-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -624,6 +624,51 @@ main.research-main {
   line-height: 1.75 !important;
 }
 
+.why-lipids-figure {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.why-lipids-img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.why-lipids-caption {
+  margin-top: 10px !important;
+  font-size: 0.75rem !important;
+  color: rgba(255, 255, 255, 0.42) !important;
+  font-style: italic;
+  line-height: 1.6 !important;
+  margin-bottom: 0 !important;
+}
+
+.why-lipids-cite-label {
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.why-lipids-cite-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-style: normal;
+}
+
+.why-lipids-cite-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+}
+
 /* Schematic — now lives inside right column */
 .research-hero-schematic {
   padding-top: 12px;
@@ -819,6 +864,33 @@ main.research-main {
   margin: 0;
   max-width: none;
   flex: 1;
+}
+
+/* Full-width left-aligned caption (replaces inline styles) */
+.accordion-schematic-caption--full {
+  margin-top: 10px;
+  text-align: left;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Wider schematic image (replaces inline max-width: 820px) */
+.accordion-schematic-img--wide {
+  max-width: 820px;
+}
+
+/* Spaced schematic block (replaces inline margin-top: 18px) */
+.accordion-schematic--spaced {
+  margin-top: 18px;
+}
+
+/* Blurb paragraph inside accordion body (replaces inline font/color/spacing) */
+.accordion-body-blurb {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+  line-height: 1.75;
 }
 
 .accordion-cite-link {
