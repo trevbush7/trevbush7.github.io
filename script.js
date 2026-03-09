@@ -15,28 +15,25 @@ document.addEventListener("click", (e) => {
 
 // Slide-in animation for motivation cards
 document.addEventListener("DOMContentLoaded", () => {
-  const cards = document.querySelectorAll(".why-lipids-card, .we-medicine-card");
-  if (!cards.length) return;
-
-  // Fallback: if observer never fires, force cards visible after 1.5s
-  const fallback = setTimeout(() => {
-    cards.forEach(el => el.classList.add("slide-in"));
-  }, 1500);
+  const blueCard = document.querySelector(".why-lipids-card");
+  const greenCard = document.querySelector(".we-medicine-card");
+  if (!blueCard && !greenCard) return;
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("slide-in");
-        observer.unobserve(entry.target);
-        // If all cards are visible, clear the fallback
-        if (document.querySelectorAll(".why-lipids-card.slide-in, .we-medicine-card.slide-in").length === cards.length) {
-          clearTimeout(fallback);
-        }
-      }
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const delay = el.classList.contains("we-medicine-card") ? 180 : 0;
+      setTimeout(() => el.classList.add("slide-in"), delay + 80);
+      observer.unobserve(el);
     });
-  }, { threshold: 0.05, rootMargin: "0px 0px -20px 0px" });
+  }, { threshold: 0.05 });
 
+  // Double rAF ensures CSS opacity:0 is painted before we start observing
   requestAnimationFrame(() => {
-    cards.forEach(el => observer.observe(el));
+    requestAnimationFrame(() => {
+      if (blueCard) observer.observe(blueCard);
+      if (greenCard) observer.observe(greenCard);
+    });
   });
 });
