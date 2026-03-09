@@ -15,6 +15,8 @@
   --green:       #1d6f5b;
   --green-light: #eaf2ef;
   --green-mid:   #c6ddd8;
+  --blue:        #1a4a7a;
+  --blue-dark:   #0f2f52;
   --border:      #e4e0d8;
   --shadow-sm:   0 2px 12px rgba(0,0,0,0.06);
   --shadow-md:   0 8px 32px rgba(0,0,0,0.09);
@@ -391,6 +393,12 @@ main.research-main {
   margin-bottom: 14px;
 }
 
+.research-hero-left {
+  position: sticky;
+  top: 80px;
+  align-self: start;
+}
+
 .research-hero-left h1 {
   font-family: var(--serif);
   font-size: clamp(2.3rem, 4vw, 3.3rem);
@@ -529,6 +537,69 @@ main.research-main {
 .we-medicine-cite a:hover {
   color: rgba(255, 255, 255, 0.9);
   opacity: 1;
+}
+
+/* Why Lipids blue card */
+.why-lipids-card {
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+  border-radius: var(--r-md);
+  padding: 28px 30px 24px;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(26, 74, 122, 0.22);
+}
+
+.why-lipids-card::before {
+  content: 'L';
+  position: absolute;
+  right: -4px;
+  top: -18px;
+  font-family: var(--serif);
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.why-lipids-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.why-lipids-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.why-lipids-label {
+  font-family: var(--serif);
+  font-size: 1.05rem !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  margin-bottom: 0 !important;
+  line-height: 1.3 !important;
+}
+
+.why-lipids-body {
+  font-size: 0.93rem !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  margin-bottom: 0 !important;
+  line-height: 1.75 !important;
 }
 
 /* Schematic — spans both text columns */
