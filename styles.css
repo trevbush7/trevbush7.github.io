@@ -377,11 +377,39 @@ main.research-main {
   max-width: var(--max-wide);
   margin: 0 auto;
   padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.research-hero-left {
+  max-width: 480px;
+}
+
+/* Title row: left heading + right intro text */
+.research-hero-title-row {
   display: grid;
   grid-template-columns: 1fr 1.65fr;
-  grid-template-rows: auto auto;
   gap: 80px;
   align-items: start;
+  margin-bottom: 40px;
+}
+
+.research-hero-intro p {
+  font-size: 1rem;
+  margin-bottom: 18px;
+  color: var(--ink-soft);
+}
+.research-hero-intro p:last-child { margin-bottom: 0; }
+.research-hero-intro strong { color: var(--ink); font-weight: 600; }
+
+/* Two motivation cards side by side */
+.research-motivation-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .research-hero-left .eyebrow {
@@ -391,12 +419,6 @@ main.research-main {
   text-transform: uppercase;
   color: var(--green);
   margin-bottom: 14px;
-}
-
-.research-hero-left {
-  position: sticky;
-  top: 80px;
-  align-self: start;
 }
 
 .research-hero-left h1 {
@@ -602,11 +624,10 @@ main.research-main {
   line-height: 1.75 !important;
 }
 
-/* Schematic — spans both text columns */
+/* Schematic — now lives inside right column */
 .research-hero-schematic {
-  grid-column: 1 / -1;
   padding-top: 12px;
-  margin-top: -28px;
+  margin-top: 4px;
   border-top: 1px solid var(--border);
   text-align: center;
 }
@@ -1283,7 +1304,14 @@ main.research-main {
 
   .about-grid { grid-template-columns: 1fr; gap: 28px; }
 
-  .research-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .research-hero-inner { flex-direction: column; gap: 24px; }
+  .research-hero-title-row { grid-template-columns: 1fr; gap: 24px; }
+  .research-motivation-cards { grid-template-columns: 1fr; }
+
+  .research-hero-left {
+    position: static;
+    grid-row: auto;
+  }
 
   .research-hero-schematic { margin-top: 0; }
 
