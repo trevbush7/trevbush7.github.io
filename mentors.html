@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentors | Trevor Bush</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .mentor-card--coming-soon {
+      position: relative;
+      pointer-events: none;
+      user-select: none;
+    }
+    .mentor-card--coming-soon > *:not(.mentor-coming-soon-badge) {
+      filter: blur(4px);
+      opacity: 0.45;
+    }
+    .mentor-coming-soon-badge {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      background: var(--green);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 8px 22px;
+      border-radius: 999px;
+      box-shadow: 0 4px 18px rgba(29,111,91,0.35);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -49,7 +78,7 @@
       </div>
 
       <div class="mentor-list">
-        <article class="mentor-card">
+        <article class="mentor-card" style="display:none">
           <img class="mentor-photo" src="assets/xiaoai-zhao.jpg" alt="Xiaoai Zhao" />
           <div class="mentor-info">
             <h3 class="mentor-name">Xiaoai Zhao</h3>
@@ -76,7 +105,8 @@
               regulation across aging and chronic disease.
             </p>
             <p class="mentor-body-text">
-              Dr. Zhao provides rigorous training in quantitative mass spectrometry–based lipidomics and enzymatic pathway inference, shaping how I define lipid effector networks at the systems level.
+              Dr. Zhao provides rigorous training in quantitative mass spectrometry–based lipidomics, lipid metabolite
+              tracing, and enzymatic pathway inference, shaping how I define lipid effector networks at the systems level.
             </p>
           </div>
         </article>
@@ -141,7 +171,7 @@
           </div>
         </article>
 
-        <article class="mentor-card">
+        <article class="mentor-card" style="display:none">
           <img class="mentor-photo" src="assets/hattie-chung.jpg" alt="Hattie Chung" />
           <div class="mentor-info">
             <h3 class="mentor-name">Hattie Chung</h3>
