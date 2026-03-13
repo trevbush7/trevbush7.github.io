@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Let's Connect | Trevor Bush</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ── Connect Page ── */
+    .connect-page {
+      min-height: calc(100vh - 57px);
+      background: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Atmospheric background blobs */
+    .connect-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+
+    .connect-bg::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: -120px;
+      width: 540px;
+      height: 540px;
+      background: radial-gradient(circle, rgba(29,111,91,0.18) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: blobDrift 12s ease-in-out infinite alternate;
+    }
+
+    .connect-bg::after {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      right: -80px;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(29,111,91,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: blobDrift 16s 2s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes blobDrift {
+      from { transform: translate(0, 0) scale(1); }
+      to   { transform: translate(30px, 20px) scale(1.06); }
+    }
+
+    /* Glass card */
+    .connect-card {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 520px;
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 28px;
+      padding: 56px 48px 52px;
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow:
+        0 0 0 1px rgba(255,255,255,0.04),
+        0 32px 80px rgba(0,0,0,0.55),
+        inset 0 1px 0 rgba(255,255,255,0.08);
+      animation: fadeUp 0.65s ease both;
+    }
+
+    .connect-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .connect-header h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.4rem, 5vw, 3.1rem);
+      font-weight: 700;
+      font-style: italic;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 14px;
+      letter-spacing: -0.01em;
+    }
+
+    .connect-header p {
+      font-size: 0.93rem;
+      color: rgba(255,255,255,0.48);
+      line-height: 1.7;
+      max-width: 340px;
+      margin: 0 auto;
+    }
+
+    /* Contact items */
+    .connect-items {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .connect-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 17px 20px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      text-decoration: none;
+      transition: all 0.22s ease;
+      animation: fadeUp 0.65s ease both;
+    }
+
+    .connect-item:nth-child(1) { animation-delay: 0.1s; }
+    .connect-item:nth-child(2) { animation-delay: 0.18s; }
+    .connect-item:nth-child(3) { animation-delay: 0.26s; }
+
+    .connect-item:hover {
+      background: rgba(29,111,91,0.18);
+      border-color: rgba(29,111,91,0.4);
+      transform: translateX(4px);
+      opacity: 1;
+    }
+
+    .connect-item:hover .connect-item-arrow {
+      transform: translateX(3px);
+      color: rgba(255,255,255,0.7);
+    }
+
+    .connect-item:hover .connect-item-icon {
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    .connect-item-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.22s ease;
+    }
+
+    .connect-item-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: rgba(255,255,255,0.65);
+      fill: none;
+      stroke-width: 1.75;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      transition: stroke 0.22s ease;
+    }
+
+    .connect-item:hover .connect-item-icon svg {
+      stroke: #fff;
+    }
+
+    .connect-item-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .connect-item-label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.35);
+      margin-bottom: 3px;
+    }
+
+    .connect-item-value {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.8);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .connect-item-arrow {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.28);
+      transition: all 0.22s ease;
+      flex-shrink: 0;
+    }
+
+    /* Divider */
+    .connect-divider {
+      width: 36px;
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+      margin: 36px auto 0;
+    }
+
+    @media (max-width: 560px) {
+      .connect-card {
+        padding: 38px 24px 36px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">Trevor Bush</a>
+    <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
+      ☰ <span>Menu</span>
+    </button>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html">Education</a>
+      <a href="mentors.html">Mentors</a>
+      <a href="publications.html">Publications</a>
+      <a href="CV.html">CV</a>
+      <a href="connect.html" aria-current="page">Let's Connect</a>
+    </nav>
+  </div>
+</header>
+
+<main class="connect-page">
+  <div class="connect-bg"></div>
+
+  <div class="connect-card">
+
+    <div class="connect-header">
+      <h1>Let's Connect</h1>
+      <p>I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out.</p>
+    </div>
+
+    <div class="connect-items">
+
+      <a class="connect-item" href="mailto:trevor.bush@yale.edu">
+        <div class="connect-item-icon">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <polyline points="2,4 12,13 22,4"/>
+          </svg>
+        </div>
+        <div class="connect-item-text">
+          <span class="connect-item-label">Email</span>
+          <span class="connect-item-value">trevor.bush@yale.edu</span>
+        </div>
+        <span class="connect-item-arrow">→</span>
+      </a>
+
+      <a class="connect-item" href="https://www.linkedin.com/in/trevor-bush" target="_blank" rel="noopener">
+        <div class="connect-item-icon">
+          <svg viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="3"/>
+            <line x1="8" y1="11" x2="8" y2="16"/>
+            <line x1="8" y1="8" x2="8" y2="8.5" stroke-width="2.5"/>
+            <path d="M12 11v5M12 14c0-1.657 1.343-3 3-3s3 1.343 3 3v2"/>
+          </svg>
+        </div>
+        <div class="connect-item-text">
+          <span class="connect-item-label">LinkedIn</span>
+          <span class="connect-item-value">linkedin.com/in/trevor-bush</span>
+        </div>
+        <span class="connect-item-arrow">→</span>
+      </a>
+
+      <a class="connect-item" href="https://scholar.google.com/citations?user=R0cPNZAAAAAJ&hl=en" target="_blank" rel="noopener">
+        <div class="connect-item-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3L2 8l10 5 10-5-10-5z"/>
+            <path d="M2 8v8l10 5 10-5V8"/>
+            <line x1="12" y1="13" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <div class="connect-item-text">
+          <span class="connect-item-label">Google Scholar</span>
+          <span class="connect-item-value">Trevor Bush — Yale</span>
+        </div>
+        <span class="connect-item-arrow">→</span>
+      </a>
+
+      <a class="connect-item" href="https://orcid.org/0009-0008-8558-3431" target="_blank" rel="noopener">
+        <div class="connect-item-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="7" x2="12" y2="7.5" stroke-width="2.5"/>
+            <line x1="12" y1="10" x2="12" y2="17"/>
+          </svg>
+        </div>
+        <div class="connect-item-text">
+          <span class="connect-item-label">ORCID</span>
+          <span class="connect-item-value">0009-0008-8558-3431</span>
+        </div>
+        <span class="connect-item-arrow">→</span>
+      </a>
+
+    </div>
+
+    <div class="connect-divider"></div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Trevor Bush</span>
+    <span>© <span id="year"></span> · Yale University · New Haven, CT</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
