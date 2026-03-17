@@ -596,7 +596,7 @@ main.research-main {
 }
 
 .accordion-schematic-img--cells {
-  max-width: 220px;
+  max-width: 380px;
   height: auto;
   object-fit: contain;
 }
@@ -606,11 +606,12 @@ main.research-main {
   font-size: 0.78rem;
   color: var(--muted);
   font-style: italic;
-  max-width: 580px;
+  max-width: 560px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.55;
   display: block;
+  text-align: center;
 }
 
 .accordion-schematic-caption--left {
