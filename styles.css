@@ -445,6 +445,7 @@ main.research-main {
   margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
+  text-align: left;
 }
 
 .research-schematic-cite-link {
@@ -611,7 +612,7 @@ main.research-main {
   margin-right: auto;
   line-height: 1.55;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .accordion-schematic-caption--left {
