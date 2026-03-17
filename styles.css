@@ -548,6 +548,8 @@ main.research-main {
   font-size: 0.94rem;
   color: var(--ink-soft);
   line-height: 1.7;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .accordion-body li strong {
@@ -580,6 +582,8 @@ main.research-main {
   background: var(--white);
   display: block;
   margin: 0 auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .accordion-schematic-img--sm {
@@ -1107,6 +1111,14 @@ main.research-main {
   .research-hero-inner { grid-template-columns: 1fr; gap: 32px; }
 
   .research-hero-schematic { margin-top: 0; }
+
+  /* Prevent accordion images and schematics from overflowing on mobile */
+  .research-accordion-wrap { padding: 0 16px; }
+  .accordion-body { padding: 0 16px 24px; }
+  .accordion-body li { padding: 12px 14px; }
+  .accordion-schematic { overflow: hidden; }
+  .accordion-schematic-img { max-width: 100%; }
+  .lipidsig-panels { grid-template-columns: 1fr; }
 
   .edu-card { grid-template-columns: 1fr; padding: 26px 22px; }
 
