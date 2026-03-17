@@ -102,16 +102,6 @@
       border-top: 1px solid rgba(255,255,255,0.15);
       overflow: hidden;
     }
-    .why-lipids-img {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.12);
-      object-fit: contain;
-      background: #fff;
-    }
     .why-lipids-caption {
       margin-top: 8px;
       font-size: 0.73rem;
@@ -119,6 +109,7 @@
       font-style: italic;
       line-height: 1.6;
       word-break: break-word;
+      text-align: center;
     }
     .why-lipids-cite-label {
       font-style: normal;
@@ -191,7 +182,10 @@
     }
 
     /* ── Additional accordion variants ── */
-    .accordion-schematic-img--wide { max-width: 100%; }
+    .accordion-schematic-img--wide {
+      max-width: 680px;
+      width: 100%;
+    }
     .accordion-schematic--spaced { margin-top: 20px; }
     .accordion-schematic-caption--full {
       max-width: 100%;
@@ -206,6 +200,19 @@
       line-height: 1.75;
       margin-bottom: 14px;
       display: block;
+    }
+
+    /* ── Blue card image — slightly reduced so it fills without dead space ── */
+    .why-lipids-img {
+      width: 92%;
+      max-width: 92%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      object-fit: contain;
+      background: #fff;
     }
 
     /* ── Responsive ── */
