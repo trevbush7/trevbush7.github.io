@@ -1112,12 +1112,6 @@ main.research-main {
 
   .research-hero-schematic { margin-top: 0; }
 
-  /* Prevent accordion images and schematics from overflowing on mobile */
-  .research-accordion-wrap { padding: 0 16px; }
-  .accordion-body { padding: 0 16px 24px; }
-  .accordion-body li { padding: 12px 14px; }
-  .accordion-schematic { overflow: hidden; }
-  .accordion-schematic-img { max-width: 100%; }
   .lipidsig-panels { grid-template-columns: 1fr; }
 
   .edu-card { grid-template-columns: 1fr; padding: 26px 22px; }
