@@ -7,12 +7,10 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-593X25MBZ3');
   </script>
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Research | Trevor Bush</title>
@@ -69,6 +67,8 @@
       position: relative;
       overflow: hidden;
       box-shadow: 0 8px 32px rgba(26,74,122,0.22);
+      min-width: 0;
+      box-sizing: border-box;
     }
     .why-lipids-card::before {
       content: 'L';
@@ -92,8 +92,47 @@
     }
     .why-lipids-body {
       font-size: 0.93rem; color: rgba(255,255,255,0.78);
-      margin: 0; line-height: 1.75;
+      margin: 0 0 16px; line-height: 1.75;
     }
+
+    /* ── Why Lipids figure — previously missing ── */
+    .why-lipids-figure {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      overflow: hidden;
+    }
+    .why-lipids-img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      object-fit: contain;
+      background: #fff;
+    }
+    .why-lipids-caption {
+      margin-top: 8px;
+      font-size: 0.73rem;
+      color: rgba(255,255,255,0.48);
+      font-style: italic;
+      line-height: 1.6;
+      word-break: break-word;
+    }
+    .why-lipids-cite-label {
+      font-style: normal;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+    }
+    .why-lipids-cite-link {
+      color: rgba(255,255,255,0.6);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-style: normal;
+      word-break: break-all;
+    }
+    .why-lipids-cite-link:hover { color: rgba(255,255,255,0.9); opacity: 1; }
 
     /* ── Green WE card ── */
     .we-medicine-card {
@@ -102,6 +141,8 @@
       padding: 28px 30px 24px;
       position: relative; overflow: hidden;
       box-shadow: 0 8px 32px rgba(29,111,91,0.22);
+      min-width: 0;
+      box-sizing: border-box;
     }
     .we-medicine-card::before {
       content: 'WE';
@@ -133,17 +174,47 @@
       font-size: 0.75rem; color: rgba(255,255,255,0.42); font-style: italic;
       border-top: 1px solid rgba(255,255,255,0.12);
       padding-top: 12px; margin: 0; line-height: 1.6;
+      word-break: break-word;
     }
     .we-medicine-cite a {
       color: rgba(255,255,255,0.6); text-decoration: underline;
       text-underline-offset: 2px; font-style: normal;
+      word-break: break-all;
     }
     .we-medicine-cite a:hover { color: rgba(255,255,255,0.9); opacity: 1; }
+
+    /* ── APA label in accordion captions ── */
+    .apa-label {
+      font-style: normal;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    /* ── Additional accordion variants ── */
+    .accordion-schematic-img--wide { max-width: 100%; }
+    .accordion-schematic--spaced { margin-top: 20px; }
+    .accordion-schematic-caption--full {
+      max-width: 100%;
+      text-align: left;
+      margin-left: 0;
+      margin-right: 0;
+      word-break: break-word;
+    }
+    .accordion-body-blurb {
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      margin-bottom: 14px;
+      display: block;
+    }
 
     /* ── Responsive ── */
     @media (max-width: 820px) {
       .research-hero-title-row { grid-template-columns: 1fr; gap: 24px; }
       .research-motivation-cards { grid-template-columns: 1fr; }
+      .why-lipids-card,
+      .we-medicine-card { padding: 22px 18px 18px; }
+      .research-hero-inner { padding: 0 16px; }
     }
   </style>
 </head>
@@ -169,7 +240,6 @@
 
 <main class="research-main">
 
-  <!-- Page hero — light, on-brand -->
   <section class="research-hero">
     <div class="research-hero-inner">
 
@@ -525,7 +595,7 @@
               <p class="accordion-schematic-label">Spatial multimodal co-mapping — DBiTplus</p>
               <img
                 src="assets/dbitplus-schematic.png"
-                alt="DBiTplus workflow: tissue barcoding and cDNA retrieval for spatial transcriptomics combined with CODEX/CellScape multiplexed protein imaging on the same section, with three-stage bioinformatic pipeline for cell segmentation, MaxFuse annotation, and imaging-guided spot deconvolution into single-cell-resolved RNA and protein atlases"
+                alt="DBiTplus workflow"
                 class="accordion-schematic-img"
               />
               <p class="accordion-schematic-caption accordion-schematic-caption--full">
