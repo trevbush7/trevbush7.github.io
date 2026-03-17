@@ -597,7 +597,7 @@ main.research-main {
 }
 
 .accordion-schematic-img--cells {
-  max-width: 380px;
+  max-width: 560px;
   height: auto;
   object-fit: contain;
 }
