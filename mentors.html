@@ -12,40 +12,11 @@
   </script>
 
   <link rel="icon" type="image/png" href="assets/favicon.png">
-  
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mentors | Trevor Bush</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    .mentor-card--coming-soon {
-      position: relative;
-      pointer-events: none;
-      user-select: none;
-    }
-    .mentor-card--coming-soon > *:not(.mentor-coming-soon-badge) {
-      filter: blur(6px);
-      opacity: 0.3;
-    }
-    .mentor-coming-soon-badge {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
-      background: var(--green);
-      color: #fff;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      padding: 8px 22px;
-      border-radius: 999px;
-      box-shadow: 0 4px 18px rgba(29,111,91,0.35);
-      white-space: nowrap;
-      pointer-events: none;
-    }
-  </style>
 </head>
 <body>
 
@@ -73,9 +44,9 @@
     <div class="container">
       <h1>Mentors</h1>
       <p>
-        My scientific training is shaped by complementary mentorship in lipid systems metabolism,
-        quantitative multi-omics mass spectrometry, multi-target herbal pharmacology,
-        and predictive tissue systems biology.
+        My doctoral training is shaped by complementary mentorship in multi-target herbal
+        pharmacology, systems pharmacology, network medicine, and brain PET neuroimaging —
+        uniting the Eastern and Western traditions at the heart of WE Medicine.
       </p>
     </div>
   </section>
@@ -90,37 +61,96 @@
       </div>
 
       <div class="mentor-list">
-        <article class="mentor-card mentor-card--coming-soon">
-          <div class="mentor-coming-soon-badge">Coming Soon</div>
-          <img class="mentor-photo" src="assets/xiaoai-zhao.jpg" alt="Xiaoai Zhao" />
+        <article class="mentor-card">
+          <img class="mentor-photo" src="assets/yung-chi-cheng.jpg" alt="Yung-Chi Cheng" />
           <div class="mentor-info">
-            <h3 class="mentor-name">Xiaoai Zhao</h3>
-            <p class="mentor-title-text">Assistant Professor</p>
-            <p class="mentor-dept">Departments of Neuroscience and Comparative Medicine, Yale School of Medicine</p>
+            <h3 class="mentor-name">Yung-Chi Cheng</h3>
+            <p class="mentor-title-text">Henry Bronson Professor of Pharmacology</p>
+            <p class="mentor-dept">Department of Pharmacology, Yale School of Medicine</p>
+            <p class="mentor-dept">Chairman, Consortium for the Globalization of Chinese Medicine (CGCM)</p>
 
             <p class="mentor-section-label">Research Focus</p>
             <p class="mentor-body-text">
-              Dr. Zhao's lab investigates the functional roles of complex membrane lipids in cellular and
-              organismal physiology. Her group studies how phospholipid and sphingolipid composition regulates
-              cellular processes, organelle function, and tissue integrity during normal physiology, aging, and
-              age-related disease.
+              Dr. Cheng is a pioneer in antiviral and anticancer drug development and a global leader
+              in applying rigorous pharmacological frameworks to traditional Chinese and herbal medicines.
+              His laboratory studies and develops novel anti-cancer and anti-viral drugs — spanning
+              hepatocellular carcinoma, pancreatic cancer, colorectal cancer, HBV, HCV, HIV, EBV, and CMV
+              — and is currently exploring systems biology approaches to develop multi-targeted medicines
+              for cancer and other aging-related diseases.
             </p>
             <p class="mentor-body-text">
-              The lab integrates advanced mass spectrometry–based lipidomics, organelle-resolved lipid profiling,
-              and technology development to uncover how dynamic lipid remodeling contributes to cellular stress
-              responses and systemic metabolic regulation.
+              Beyond individual drug programs, Dr. Cheng has spearheaded the vision of
+              <em>WE Medicine</em> — a convergence of Western reductionist pharmacology and Eastern
+              multi-target, polychemical herbal medicine — building the Consortium for the Globalization
+              of Chinese Medicine with partners at the University of Hong Kong, Peking University,
+              Tsinghua University, and other major institutions worldwide. With 457 publications and
+              over 34,000 citations, his influence spans antiviral nucleoside analogues, herbal
+              formulation standardization, and network pharmacology.
             </p>
 
             <p class="mentor-section-label">Role in My Training</p>
             <p class="mentor-body-text">
-              My doctoral focus within Dr. Zhao's lab centers on <strong>complex lipids in systems metabolism</strong>.
-              I investigate how lipid remodeling contributes to tissue–tissue communication and organismal metabolic
-              regulation across aging and chronic disease.
+              My doctoral work in the Cheng Lab investigates how traditional medicinal herbs treat
+              chronic inflammatory diseases through a polychemical, multi-target, systems pharmacology
+              approach. Dr. Cheng provides mentorship in herbal formulation design, pharmacological
+              validation, CETSA-MS and HDX-MS target identification, interaction metabolomics, and
+              the mechanistic interpretation of polypharmacological and synergistic herbal interventions.
+              Through this work, I aim to contribute to his overarching vision of WE Medicine.
+            </p>
+
+            <div class="connect-row" style="margin-top:1rem;">
+              <a href="https://medicine.yale.edu/profile/yung-chi-cheng/" target="_blank" rel="noopener" class="connect-link secondary">Yale Profile ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CO-MENTOR -->
+    <section class="mentors-section">
+      <div class="mentors-section-header">
+        <h2>Co-Mentor</h2>
+        <p>Providing complementary expertise in brain PET neuroimaging and neuropharmacology.</p>
+      </div>
+
+      <div class="mentor-list">
+        <article class="mentor-card">
+          <img class="mentor-photo" src="assets/jason-cai.jpg" alt="Jason Cai"
+               onerror="this.style.display='none'" />
+          <div class="mentor-info">
+            <h3 class="mentor-name">Jason Cai</h3>
+            <p class="mentor-title-text">Associate Professor of Radiology and Biomedical Imaging, and of Pharmacology</p>
+            <p class="mentor-dept">Wu Tsai Institute · Yale School of Medicine</p>
+
+            <p class="mentor-section-label">Research Focus</p>
+            <p class="mentor-body-text">
+              Dr. Cai's research is focused on developing novel PET imaging probes and methodologies
+              for brain neuroimaging, enabling sensitive and quantitative measurements of neuroactivity
+              and neurochemical processes in living systems. His group integrates animal models,
+              behavioral testing, biomarker development, pharmacology, and multimodal imaging to
+              interrogate questions at the intersection of aging, cognition, psychopharmacology,
+              synaptic biology, and systems neuroscience.
             </p>
             <p class="mentor-body-text">
-              Dr. Zhao provides rigorous training in quantitative mass spectrometry–based lipidomics, lipid metabolite
-              tracing, and enzymatic pathway inference, shaping how I define lipid effector networks at the systems level.
+              Trained in organic chemistry (PhD, University of Missouri–Columbia) and PET radiochemistry
+              (Carolyn Anderson laboratory, University of Pittsburgh), Dr. Cai joined the Yale PET Center
+              in 2015 and has since built a program at the forefront of brain PET probe development
+              and in vivo neuroimaging pharmacology.
             </p>
+
+            <p class="mentor-section-label">Role in My Training</p>
+            <p class="mentor-body-text">
+              Dr. Cai contributes expertise in positron emission tomography and neuroimaging pharmacology
+              to my training. His mentorship provides quantitative, in vivo imaging tools for tracking
+              the neurochemical and neuroactivity consequences of herbal medicinal interventions in
+              models of neurodegeneration and chronic neuroinflammation — translating molecular target
+              engagement into living system readouts.
+            </p>
+
+            <div class="connect-row" style="margin-top:1rem;">
+              <a href="https://medicine.yale.edu/profile/jason_cai/" target="_blank" rel="noopener" class="connect-link secondary">Yale Profile ↗</a>
+              <a href="https://wti.yale.edu/profile/jason-cai" target="_blank" rel="noopener" class="connect-link secondary">Wu Tsai Institute ↗</a>
+            </div>
           </div>
         </article>
       </div>
@@ -130,89 +160,7 @@
     <section class="mentors-section">
       <div class="mentors-section-header">
         <h2>Thesis Committee</h2>
-        <p>Faculty guiding my dissertation through complementary expertise in herbal pharmacology,
-        quantitative proteomics and lipidomics, spatial omics, and predictive systems biology.</p>
-      </div>
-
-      <div class="mentor-list">
-
-        <article class="mentor-card">
-          <img class="mentor-photo" src="assets/yung-chi-cheng.jpg" alt="Yung-Chi Cheng" />
-          <div class="mentor-info">
-            <h3 class="mentor-name">Yung-Chi Cheng</h3>
-            <p class="mentor-title-text">Henry Bronson Professor of Pharmacology</p>
-            <p class="mentor-dept">Department of Pharmacology, Yale School of Medicine</p>
-
-            <p class="mentor-section-label">Research Focus</p>
-            <p class="mentor-body-text">
-              Dr. Cheng is a pioneer in antiviral and anticancer drug development and a global leader in
-              traditional Chinese medicine. His work applies rigorous pharmacology and quality-control frameworks
-              to multi-component herbal formulations, emphasizing polypharmacology and network-level mechanisms of action.
-            </p>
-
-            <p class="mentor-section-label">Role in My Training</p>
-            <p class="mentor-body-text">
-              Dr. Cheng guides my development of multi-target treatments derived from herbal medicine. He provides
-              mentorship in formulation design, pharmacological validation, and mechanistic analysis of
-              polypharmacological and synergistic herbal interventions within a network pharmacology framework.
-            </p>
-          </div>
-        </article>
-
-        <article class="mentor-card">
-          <img class="mentor-photo" src="assets/yansheng-liu.jpg" alt="Yansheng Liu" />
-          <div class="mentor-info">
-            <h3 class="mentor-name">Yansheng Liu</h3>
-            <p class="mentor-title-text">Associate Professor</p>
-            <p class="mentor-dept">Department of Pharmacology &amp; Yale Cancer Center</p>
-
-            <p class="mentor-section-label">Research Focus</p>
-            <p class="mentor-body-text">
-              Dr. Liu's lab develops quantitative mass spectrometry and bioinformatic frameworks to define
-              proteome dynamics, protein abundance, turnover, PTMs, and phosphoproteomic signaling states.
-              His group integrates DIA-MS, lipidomics, and MALDI-based spatial omics to construct spatially
-              organized multi-omic network models.
-            </p>
-
-            <p class="mentor-section-label">Role in My Training</p>
-            <p class="mentor-body-text">
-              Dr. Liu provides complementary mass spectrometry expertise across proteomics and lipidomics.
-              He guides my development of DIA-MS workflows, PTM and phosphoproteomic analysis, multi-omic
-              bioinformatic integration, and MALDI spatial omics approaches for quantitative and spatial
-              modeling of lipid–protein networks.
-            </p>
-          </div>
-        </article>
-
-        <article class="mentor-card mentor-card--coming-soon">
-          <div class="mentor-coming-soon-badge">Coming Soon</div>
-          <img class="mentor-photo" src="assets/hattie-chung.jpg" alt="Hattie Chung" />
-          <div class="mentor-info">
-            <h3 class="mentor-name">Hattie Chung</h3>
-            <p class="mentor-title-text">Assistant Professor</p>
-            <p class="mentor-dept">Department of Pathology &amp; Center for Systems Biology, Harvard Medical School</p>
-
-            <p class="mentor-section-label">Research Focus</p>
-            <p class="mentor-body-text">
-              Dr. Chung studies cellular heterogeneity and tissue homeostasis through systems biology.
-              Her lab seeks to define the minimal cell–cell circuit motifs that sustain stable, adaptive,
-              and resilient tissues across development, physiological fluctuation, aging, and disease.
-            </p>
-            <p class="mentor-body-text">
-              By integrating spatial genomics, machine learning, and mechanistic modeling, her group aims
-              to uncover the "grammar" of cellular interactions that governs tissue remodeling, resilience, and failure.
-            </p>
-
-            <p class="mentor-section-label">Role in My Training</p>
-            <p class="mentor-body-text">
-              Dr. Chung contributes predictive systems-biology frameworks that shape how I interpret spatial
-              and multi-omic data in terms of tissue-level circuits. Her perspective informs how lipid–protein
-              network remodeling and herbal interventions are contextualized within higher-order cell–cell
-              interaction motifs governing tissue resilience and disease progression.
-            </p>
-          </div>
-        </article>
-
+        <p>To be determined.</p>
       </div>
     </section>
 

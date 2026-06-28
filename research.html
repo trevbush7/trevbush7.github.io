@@ -58,74 +58,6 @@
       text-align: center;
     }
 
-    /* ── Blue card ── */
-    :root { --blue: #1a4a7a; --blue-dark: #0f2f52; }
-    .why-lipids-card {
-      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
-      border-radius: var(--r-md);
-      padding: 28px 30px 24px;
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 8px 32px rgba(26,74,122,0.22);
-      min-width: 0;
-      box-sizing: border-box;
-    }
-    .why-lipids-card::before {
-      content: 'L';
-      position: absolute; right: -4px; top: -18px;
-      font-family: var(--serif); font-size: 7rem; font-weight: 700;
-      color: rgba(255,255,255,0.05); line-height: 1;
-      pointer-events: none; user-select: none;
-    }
-    .why-lipids-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-    .why-lipids-badge {
-      display: inline-flex; align-items: center;
-      padding: 4px 12px; border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.3);
-      background: rgba(255,255,255,0.1);
-      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em;
-      color: rgba(255,255,255,0.85); text-transform: uppercase; flex-shrink: 0;
-    }
-    .why-lipids-label {
-      font-family: var(--serif); font-size: 1.05rem; font-weight: 600;
-      color: #fff; margin: 0; line-height: 1.3;
-    }
-    .why-lipids-body {
-      font-size: 0.93rem; color: rgba(255,255,255,0.78);
-      margin: 0 0 16px; line-height: 1.75;
-      text-wrap: pretty;
-    }
-
-    /* ── Why Lipids figure — previously missing ── */
-    .why-lipids-figure {
-      margin-top: 16px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(255,255,255,0.15);
-      overflow: hidden;
-    }
-    .why-lipids-caption {
-      margin-top: 8px;
-      font-size: 0.73rem;
-      color: rgba(255,255,255,0.48);
-      font-style: italic;
-      line-height: 1.6;
-      word-break: break-word;
-      text-align: left;
-    }
-    .why-lipids-cite-label {
-      font-style: normal;
-      font-weight: 600;
-      color: rgba(255,255,255,0.6);
-    }
-    .why-lipids-cite-link {
-      color: rgba(255,255,255,0.6);
-      text-decoration: underline;
-      text-underline-offset: 2px;
-      font-style: normal;
-      word-break: break-all;
-    }
-    .why-lipids-cite-link:hover { color: rgba(255,255,255,0.9); opacity: 1; }
-
     /* ── Green WE card ── */
     .we-medicine-card {
       background: linear-gradient(135deg, #0f3d2e 0%, #1a5c45 60%, #1d6f5b 100%);
@@ -177,7 +109,84 @@
     }
     .we-medicine-cite a:hover { color: rgba(255,255,255,0.9); opacity: 1; }
 
-    /* ── APA label in accordion captions ── */
+    /* ── Blue card ── */
+    :root { --blue: #1a4a7a; --blue-dark: #0f2f52; }
+    .why-lipids-card {
+      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+      border-radius: var(--r-md);
+      padding: 28px 30px 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(26,74,122,0.22);
+      min-width: 0;
+      box-sizing: border-box;
+    }
+    .why-lipids-card::before {
+      content: 'L';
+      position: absolute; right: -4px; top: -18px;
+      font-family: var(--serif); font-size: 7rem; font-weight: 700;
+      color: rgba(255,255,255,0.05); line-height: 1;
+      pointer-events: none; user-select: none;
+    }
+    .why-lipids-top { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .why-lipids-badge {
+      display: inline-flex; align-items: center;
+      padding: 4px 12px; border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.3);
+      background: rgba(255,255,255,0.1);
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em;
+      color: rgba(255,255,255,0.85); text-transform: uppercase; flex-shrink: 0;
+    }
+    .why-lipids-label {
+      font-family: var(--serif); font-size: 1.05rem; font-weight: 600;
+      color: #fff; margin: 0; line-height: 1.3;
+    }
+    .why-lipids-body {
+      font-size: 0.93rem; color: rgba(255,255,255,0.78);
+      margin: 0 0 16px; line-height: 1.75;
+      text-wrap: pretty;
+    }
+    .why-lipids-figure {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      overflow: hidden;
+    }
+    .why-lipids-caption {
+      margin-top: 8px;
+      font-size: 0.73rem;
+      color: rgba(255,255,255,0.48);
+      font-style: italic;
+      line-height: 1.6;
+      word-break: break-word;
+      text-align: left;
+    }
+    .why-lipids-cite-label {
+      font-style: normal;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+    }
+    .why-lipids-cite-link {
+      color: rgba(255,255,255,0.6);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-style: normal;
+      word-break: break-all;
+    }
+    .why-lipids-cite-link:hover { color: rgba(255,255,255,0.9); opacity: 1; }
+    .why-lipids-img {
+      width: 92%;
+      max-width: 92%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      object-fit: contain;
+      background: #fff;
+    }
+
+    /* ── APA label ── */
     .apa-label {
       font-style: normal;
       font-weight: 600;
@@ -188,6 +197,48 @@
       content: '';
       display: block;
       margin-top: 6px;
+    }
+
+    /* ── Techniques section ── */
+    .techniques-section {
+      max-width: var(--max-wide);
+      margin: 0 auto 0;
+      padding: 48px 24px 0;
+    }
+    .techniques-header {
+      margin-bottom: 28px;
+    }
+    .techniques-header .eyebrow {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+    .techniques-header h2 {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .techniques-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 10px;
+    }
+    .technique-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--green);
+      border-radius: var(--r-sm);
+      padding: 12px 16px;
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      font-weight: 400;
+      line-height: 1.5;
+      box-shadow: var(--shadow-sm);
     }
 
     /* ── Additional accordion variants ── */
@@ -211,19 +262,6 @@
       display: block;
     }
 
-    /* ── Blue card image — slightly reduced so it fills without dead space ── */
-    .why-lipids-img {
-      width: 92%;
-      max-width: 92%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.12);
-      object-fit: contain;
-      background: #fff;
-    }
-
     /* ── Responsive ── */
     @media (max-width: 820px) {
       .research-hero-title-row { grid-template-columns: 1fr; gap: 24px; }
@@ -231,6 +269,11 @@
       .why-lipids-card,
       .we-medicine-card { padding: 22px 18px 18px; }
       .research-hero-inner { padding: 0 16px; }
+      .techniques-grid { grid-template-columns: 1fr 1fr; }
+      .techniques-section { padding: 36px 16px 0; }
+    }
+    @media (max-width: 560px) {
+      .techniques-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -265,72 +308,42 @@
           <p class="eyebrow">Research</p>
           <h1>Research<br>Interests</h1>
           <p class="tagline">
-            Defining how lipid–protein networks become dysregulated in aging
-            and chronic inflammatory disease — and designing multi-target
-            interventions that restore them toward healthier states.
+            Investigating how traditional medicinal herbs treat chronic inflammatory diseases
+            through a polychemical, multi-target, systems pharmacology approach — and mapping
+            how complex lipid metabolism is dysregulated in those same diseases.
           </p>
         </div>
         <div class="research-hero-intro">
           <p>
-            My research operates in two complementary arms. The first uses
-            <strong>multi-omics systems biology</strong> — integrating lipidomics,
-            proteomics, phosphoproteomics, RNA sequencing, and spatial omics — to map
-            how lipid composition and lipid–protein interaction networks reorganize
-            across tissues and cell types during aging and chronic inflammatory disease.
-            The goal is a quantitative, spatially resolved picture of where and how
-            these networks fail.
+            Chronic inflammatory diseases — neurodegeneration, inflammatory bowel disease, and
+            other age-related conditions — are multifactorial in their pathology, driven by
+            many interconnected pathways simultaneously. Western medicine's "one-target, one-drug"
+            model is insufficient for this complexity: block a single node and the body adapts,
+            compensatory pathways engage, and the result is a weakened therapeutic response and
+            potentially toxic adverse effects from sustained target suppression.
           </p>
           <p>
-            The second applies <strong>herbal systems pharmacology</strong> to those
-            network maps. Rather than optimizing a single target, I study how
-            multi-component natural products perturb protein networks simultaneously —
-            using proteome-wide thermal and structural stability profiling (CETSA-MS,
-            LiP-MS, PELSA) under mixture conditions to resolve the distributed
-            mechanisms of polypharmacology and emergent synergy. Together, the two arms
-            form a closed loop: define how networks fail, then identify interventions
-            that restore them.
+            My primary interest is breaking from this reductionist model by applying
+            <strong>traditional medicinal herbs from across the world</strong> to treat chronic
+            inflammatory diseases through a polychemical, <strong>multi-target (polypharmacology),
+            systems pharmacology approach</strong>. I study how multi-component natural products
+            perturb protein and lipid networks simultaneously — using proteome-wide profiling
+            (CETSA-MS, HDX-MS), interaction metabolomics, and network pharmacology to resolve
+            the distributed mechanisms of polypharmacology and emergent synergy.
+          </p>
+          <p>
+            A complementary interest involves the <strong>understudied dysregulation of complex
+            lipid metabolism</strong> in chronic inflammatory disease — both as a diagnostic and
+            prognostic layer, and as a window into how medicinal herb interventions reshape
+            disease-associated lipid networks. Together, these two arms form a closed loop:
+            understand how lipid–protein networks are dysregulated, then design and validate
+            multi-target herbal interventions that restore them.
           </p>
         </div>
       </div>
 
-      <!-- Two motivation cards side by side -->
+      <!-- Two motivation cards — WE Medicine first, Why Lipids second -->
       <div class="research-motivation-cards">
-
-        <div class="why-lipids-card">
-          <div class="why-lipids-top">
-            <span class="why-lipids-badge">Motivation</span>
-            <p class="why-lipids-label">Why Study Lipids?</p>
-          </div>
-          <p class="why-lipids-body">
-            The diversity of lipids is on the same order of magnitude as that of proteins,
-            yet they remain far less studied than proteins or nucleic acids. They are
-            not passive structural components — they are dynamic regulators of membrane
-            organization, receptor function, organelle identity, and inflammatory
-            signaling. Lipid composition shifts measurably with age, and dysregulation
-            of specific lipid species and metabolic enzymes is increasingly recognized
-            as a driver — not merely a consequence — of chronic inflammatory disease,
-            neurodegeneration, and metabolic dysfunction. Despite this, most disease
-            research still treats the lipidome as a downstream readout rather than a
-            causal layer worth targeting directly.
-          </p>
-          <div class="why-lipids-figure">
-            <img
-              src="assets/lipid-classes-figure.png"
-              alt="Representative chemical structures for each of the eight major lipid categories: fatty acyls, glycerolipids, glycerophospholipids, sphingolipids, sterol lipids, prenol lipids, saccharolipids, and polyketides"
-              class="why-lipids-img"
-            />
-            <p class="why-lipids-caption">
-              Representative structures for the eight major lipid categories defined by the LIPID MAPS classification system — illustrating the structural diversity that underlies their distinct biological functions.
-              Licensed under CC BY 4.0.
-              
-              <span class="why-lipids-cite-label">Figure from:</span>
-              Fahy, E., Subramaniam, S., Brown, H. A., Glass, C. K., Merrill, A. H., Murphy, R. C., Raetz, C. R. H., Russell, D. W., Seyama, Y., Shaw, W., Shimizu, T., Spener, F., van Meer, G., VanNieuwenhze, M. S., White, S. H., Witztum, J. L., &amp; Dennis, E. A. (2005). A comprehensive classification system for lipids. <em>Journal of Lipid Research</em>, <em>46</em>(5), 839–861.
-              <a href="https://doi.org/10.1194/jlr.E400004-JLR200" target="_blank" rel="noopener" class="why-lipids-cite-link">
-                https://doi.org/10.1194/jlr.E400004-JLR200 ↗
-              </a>
-            </p>
-          </div>
-        </div>
 
         <div class="we-medicine-card">
           <div class="we-medicine-top">
@@ -361,7 +374,8 @@
             applied to Eastern multi-target pharmacology — defines the emerging paradigm
             of <strong>WE Medicine</strong>: the melting of W and E into a unified
             approach capable of meeting the unmet medical needs of aging and chronic
-            disease. Neither tradition alone is sufficient. Together, they are.
+            disease. Through his efforts, Trevor hopes to further Professor Yung-Chi
+            Cheng's vision of this convergence.
           </p>
           <p class="we-medicine-cite">
             Cheng, Y. C., Cheng, P., Liu, S. H., Lam, W., Guan, F., Hu, R., &amp; Cheng, W. (2019).
@@ -371,6 +385,42 @@
               https://doi.org/10.31031/NACS.2019.03.000572 ↗
             </a>
           </p>
+        </div>
+
+        <div class="why-lipids-card">
+          <div class="why-lipids-top">
+            <span class="why-lipids-badge">Motivation</span>
+            <p class="why-lipids-label">Why Study Lipids?</p>
+          </div>
+          <p class="why-lipids-body">
+            The diversity of lipids is on the same order of magnitude as that of proteins,
+            yet they remain far less studied than proteins or nucleic acids. They are
+            not passive structural components — they are dynamic regulators of membrane
+            organization, receptor function, organelle identity, and inflammatory
+            signaling. Lipid composition shifts measurably with age, and dysregulation
+            of specific lipid species and metabolic enzymes is increasingly recognized
+            as a driver — not merely a consequence — of chronic inflammatory disease,
+            neurodegeneration, and metabolic dysfunction. Despite this, most disease
+            research still treats the lipidome as a downstream readout rather than a
+            causal layer worth targeting directly.
+          </p>
+          <div class="why-lipids-figure">
+            <img
+              src="assets/lipid-classes-figure.png"
+              alt="Representative chemical structures for each of the eight major lipid categories: fatty acyls, glycerolipids, glycerophospholipids, sphingolipids, sterol lipids, prenol lipids, saccharolipids, and polyketides"
+              class="why-lipids-img"
+            />
+            <p class="why-lipids-caption">
+              Representative structures for the eight major lipid categories defined by the LIPID MAPS classification system — illustrating the structural diversity that underlies their distinct biological functions.
+              Licensed under CC BY 4.0.
+
+              <span class="why-lipids-cite-label">Figure from:</span>
+              Fahy, E., Subramaniam, S., Brown, H. A., Glass, C. K., Merrill, A. H., Murphy, R. C., Raetz, C. R. H., Russell, D. W., Seyama, Y., Shaw, W., Shimizu, T., Spener, F., van Meer, G., VanNieuwenhze, M. S., White, S. H., Witztum, J. L., &amp; Dennis, E. A. (2005). A comprehensive classification system for lipids. <em>Journal of Lipid Research</em>, <em>46</em>(5), 839–861.
+              <a href="https://doi.org/10.1194/jlr.E400004-JLR200" target="_blank" rel="noopener" class="why-lipids-cite-link">
+                https://doi.org/10.1194/jlr.E400004-JLR200 ↗
+              </a>
+            </p>
+          </div>
         </div>
 
       </div>
@@ -387,7 +437,7 @@
           and compound verification through multi-omics and multi-network analysis
           to spatially resolved, systems-level TCM holism.
           Licensed under CC BY 4.0.
-          
+
           <span class="apa-label">Figure from:</span>
           Zhai, Y., Liu, L., Zhang, F., Chen, X., Wang, H., Zhou, J., Chai, K., Liu, J., Lei, H., Lu, P., Guo, M., Guo, J., &amp; Wu, J. (2025). Network pharmacology: A crucial approach in traditional Chinese medicine research. <em>Chinese Medicine</em>, <em>20</em>(1), 8.
           <a
@@ -402,27 +452,173 @@
     </div>
   </section>
 
-  <!-- Accordion sections -->
+  <!-- Techniques section -->
+  <div class="techniques-section">
+    <div class="techniques-header">
+      <p class="eyebrow">Approaches &amp; Techniques</p>
+      <h2>Methods</h2>
+    </div>
+    <div class="techniques-grid">
+      <div class="technique-item">Plant sourcing and preparation</div>
+      <div class="technique-item">Bioactivity guided fractionation</div>
+      <div class="technique-item">Protein–Ligand Kinetics</div>
+      <div class="technique-item">Interaction metabolomics</div>
+      <div class="technique-item">Reporter cell lines</div>
+      <div class="technique-item">Inducible cell models</div>
+      <div class="technique-item">Cellular Thermal Shift Assay (CETSA-MS)</div>
+      <div class="technique-item">Hydrogen Deuterium Exchange (HDX-MS)</div>
+      <div class="technique-item">Molecular docking and dynamics</div>
+      <div class="technique-item">Mouse models</div>
+      <div class="technique-item">Mass spectrometry spatial omics (Proteomics, Lipidomics, Metabolomics)</div>
+      <div class="technique-item">Positron-Emission Tomography</div>
+    </div>
+  </div>
+
+  <!-- Accordion sections — Herbal Systems Pharmacology first -->
   <div class="research-accordion-wrap">
 
     <details>
       <summary>
-        1 — Multi-Omics Systems Biology
+        1 — Herbal Systems Pharmacology
+        <span class="chevron">▾</span>
+      </summary>
+      <div class="accordion-body">
+
+        <h3>Network Pharmacology, Polypharmacology, and Synergy in Herbal Medicine</h3>
+        <p>
+          The primary arm of my research applies <strong>herbal systems pharmacology</strong>
+          to chronic inflammatory diseases. Rather than optimizing single-target inhibition, I
+          study how <strong>multi-target natural products</strong> and rational herbal
+          combinations reshape lipid–protein interaction networks. Each compound or
+          formula is modeled as a distributed perturbation to a biological graph,
+          influencing multiple nodes simultaneously.
+        </p>
+
+        <ul>
+          <li>
+            <strong>Proteome-wide stability and structural profiling (CETSA-MS, LiP-MS, PELSA)</strong>
+            These platforms are applied under mixture conditions to define the distributed
+            proteomic perturbation landscape induced by multi-component herbal formulas.
+            Ligand-dependent shifts in thermal stability, conformational accessibility,
+            and protein interaction states are quantified across the proteome, capturing
+            both direct binding events and indirect network propagation. These perturbation
+            signatures are then integrated with lipidomic, phosphoproteomic, and RNA-seq
+            data to determine how protein-level changes propagate through lipid metabolic,
+            signaling, and transcriptional circuits.
+            <div class="accordion-schematic">
+              <img
+                src="assets/cetsa-schematic.png"
+                alt="Cellular thermal shift assay (CETSA) principle: ligand binding stabilizes proteins against heat-induced denaturation, shifting the melting temperature"
+                class="accordion-schematic-img"
+              />
+              <p class="accordion-schematic-caption">
+                CETSA principle — natural product binding stabilizes target proteins against
+                thermal denaturation, producing a measurable shift in melting temperature (ΔT<sub>m</sub>)
+                detectable by western blot or, at proteome scale, by mass spectrometry (CETSA-MS).
+                Licensed under CC BY 4.0.
+
+                <span class="apa-label">Figure from:</span>
+                Song, J. (2025). Applications of the cellular thermal shift assay to drug discovery in natural products: A review. <em>International Journal of Molecular Sciences</em>, <em>26</em>(9), 3940.
+                <a
+                  href="https://doi.org/10.3390/ijms26093940"
+                  target="_blank"
+                  rel="noopener"
+                  class="accordion-cite-link"
+                >https://doi.org/10.3390/ijms26093940 ↗</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <strong>Synergy and network-level response profiling</strong>
+            Herbal combinations, fractions, and dose matrices are systematically tested
+            with multi-omic readouts to identify non-additive network responses. Synergy
+            is defined not only by single endpoints such as viability, but by cooperative
+            normalization of lipid, protein, and transcriptional signatures associated
+            with aging and chronic inflammation.
+            A central challenge in this work is identifying <em>which compounds</em> within
+            a complex mixture are responsible for a synergistic effect — without prior knowledge
+            of the active constituents. Classical metabolomics approaches fail here because they
+            treat each compound's abundance independently, missing the combinatorial signal
+            entirely. <em>Interaction metabolomics</em> addresses this directly by
+            augmenting the standard LC-MS feature matrix with compound interaction terms (CITs)
+            — synthetic variables calculated as the product of the peak intensities of each pair
+            of detected features. When PLS regression is applied to this expanded matrix,
+            the CITs with the highest selectivity ratios identify the specific compound pairs
+            whose co-abundance tracks with biological activity, pinpointing putative synergists
+            from within an unfractionated or partially fractionated mixture. This provides
+            the upstream compound-level identification that feeds directly into CETSA-MS
+            proteome-wide target deconvolution: interaction metabolomics reveals
+            <em>which compounds</em> are synergizing; CETSA-MS then reveals
+            <em>which proteins</em> those compounds collectively perturb.
+            <div class="accordion-schematic">
+              <img
+                src="assets/interaction-metabolomics-schematic.png"
+                alt="Interaction metabolomics workflow: LC-MS feature matrix augmented with compound interaction terms (CITs) fed into PLS regression to identify putative synergists — piperine and berberine — from a natural product mixture"
+                class="accordion-schematic-img"
+              />
+              <p class="accordion-schematic-caption">
+                Interaction metabolomics workflow — the standard LC-MS feature matrix is
+                expanded with compound interaction terms (CITs), each calculated as the
+                product of peak intensities for a pair of detected ions. PLS regression
+                on the augmented matrix identifies CITs whose co-abundance tracks with
+                biological activity, predicting putative synergists (here, piperine and
+                berberine) that classical metabolomics fails to detect.
+
+                <span class="apa-label">Figure from:</span>
+                Vidar, W. S., Baumeister, T. U. H., Caesar, L. K., Kellogg, J. J., Todd, D. A., Linington, R. G., Kvalheim, O. M., &amp; Cech, N. B. (2023). Interaction metabolomics to discover synergists in natural product mixtures. <em>Journal of Natural Products</em>, <em>86</em>(3), 655–671.
+                <a
+                  href="https://doi.org/10.1021/acs.jnatprod.2c00518"
+                  target="_blank"
+                  rel="noopener"
+                  class="accordion-cite-link"
+                >https://doi.org/10.1021/acs.jnatprod.2c00518 ↗</a>
+              </p>
+            </div>
+          </li>
+          <li>
+            <strong>Spatially resolved intervention mapping</strong>
+            Spatial omics platforms (MALDI, DESI, and related imaging) are used to
+            determine where, within intact tissues and interfaces, herbal interventions
+            restore lipid and protein localization patterns toward a younger or healthier
+            spatial phenotype.
+          </li>
+          <li>
+            <strong>Network-guided lead selection and mechanism-of-action</strong>
+            Mixture-induced proteomic perturbations, multi-omic signatures, and spatial
+            remodeling are integrated into network pharmacology models that rank natural
+            products and combinations by their ability to rewire disease networks toward
+            homeostatic attractor states.
+          </li>
+        </ul>
+
+        <p>
+          Together, <strong>herbal systems pharmacology</strong> and
+          <strong>multi-omics systems biology</strong> form a closed experimental loop —
+          first defining how lipid–protein networks fail in chronic inflammatory disease,
+          then evaluating polypharmacological herbal interventions to identify strategies
+          that restore network structure and spatial organization toward healthier
+          physiological states.
+        </p>
+
+      </div>
+    </details>
+
+    <details>
+      <summary>
+        2 — Multi-Omics &amp; Lipidomics
         <span class="chevron">▾</span>
       </summary>
       <div class="accordion-body">
 
         <h3>Effector-Layer and Spatial Mapping of Lipid–Protein Networks</h3>
         <p>
-          Lipid–protein networks are not static — they reorganize across tissues,
-          cell types, and anatomical niches in ways that bulk measurements obscure.
-          Resolving this requires layering modalities: mass spectrometry to quantify
-          what is present and how it is modified, transcriptomics to capture the
-          regulatory programs driving those changes, cell-type isolation to attribute
-          rewiring to specific populations rather than tissue averages, and spatial
-          platforms to preserve the anatomical context in which these changes occur.
-          Each modality answers a different question; the network-level picture emerges
-          from their integration.
+          The second arm uses <strong>multi-omics systems biology</strong> to map how lipid
+          composition and lipid–protein interaction networks reorganize across tissues,
+          cell types, and anatomical niches during aging and chronic inflammatory disease.
+          Bulk measurements obscure this heterogeneity; resolving it requires layering
+          modalities: mass spectrometry to quantify what is present and how it is modified,
+          transcriptomics to capture regulatory programs, cell-type isolation to attribute
+          rewiring to specific populations, and spatial platforms to preserve anatomical context.
         </p>
 
         <ul>
@@ -448,7 +644,7 @@
                 to specific immune, stromal, or progenitor cell types rather than
                 bulk tissue averages.
                 Licensed under CC BY-NC-ND 4.0.
-                
+
                 <span class="apa-label">Figure from:</span>
                 Sarkar, S., &amp; Ghosh, R. (2025). Unravelling lipid heterogeneity: Advances in single-cell lipidomics in cellular metabolism and disease. <em>BBA Advances</em>, <em>8</em>, 100169.
                 <a
@@ -491,7 +687,7 @@
               </div>
               <p class="accordion-schematic-caption accordion-schematic-caption--full">
                 Licensed under CC BY-NC 4.0.
-                
+
                 <span class="apa-label">Figure from:</span>
                 Liu, C.-H., Shen, P.-C., Lin, W.-J., Liu, H.-C., Tsai, M.-H., Huang, T.-Y., Chen, I.-C., Lai, Y.-L., Wang, Y.-D., Hung, M.-C., &amp; Cheng, W.-C. (2024). LipidSig 2.0: Integrating lipid characteristic insights into advanced lipidomics data analysis. <em>Nucleic Acids Research</em>, <em>52</em>(W1), W390–W397.
                 <a
@@ -527,7 +723,7 @@
                 for enzymatic dysregulation. Lipid-specific analyses (network enrichment, substructure,
                 compositional, and chain analysis) provide complementary mechanistic context.
                 Licensed under CC BY 4.0.
-                
+
                 <span class="apa-label">Figure from:</span>
                 Rose, T. D., Köhler, N., Falk, L., Klischat, L., Lazareva, O. E., &amp; Pauling, J. K. (2023). Lipid network and moiety analysis for revealing enzymatic dysregulation and mechanistic alterations from lipidomics data. <em>Briefings in Bioinformatics</em>, <em>24</em>(1), bbac572.
                 <a
@@ -595,7 +791,7 @@
                 intact coronal brain sections, with DESI-MS spectra compared between
                 stroked and contralateral control regions.
                 Licensed under CC BY 4.0 (© Wiley-VCH GmbH 2023).
-                
+
                 <span class="apa-label">Figure from:</span>
                 Jensen, M., Liu, S., Stepula, E., Martella, D., Birjandi, A. A., Farrell-Dillon, K., Chan, K. L. A., Parsons, M., Chiappini, C., Chapple, S. J., Mann, G. E., Vercauteren, T., Abbate, V., &amp; Bergholt, M. S. (2024). Opto-lipidomics of tissues. <em>Advanced Science</em>, <em>11</em>(14), 2302962.
                 <a
@@ -627,7 +823,7 @@
                 transcriptome atlasing via Seurat WNN (Stage 3). Compatible with both
                 fresh-frozen and FFPE clinical specimens.
                 Licensed under CC BY 4.0.
-                
+
                 <span class="apa-label">Figure from:</span>
                 Enninful, A., Zhang, Z., Klymyshyn, D., Ingalls, M., Yang, M., Zong, H., Bai, Z., Farzad, N., Su, G., Baysoy, A., Nam, J., Lu, Y., Bao, S., Deng, S., Zhang, N. R., Braubach, O., Xu, M. L., Ma, Z., &amp; Fan, R. (2026). Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus. <em>Nature Methods</em>, 1–13.
                 <a
@@ -649,132 +845,6 @@
           vulnerable. Together they produce network models with enough resolution to
           identify where dysregulation originates and what interventions are most
           likely to restore it.
-        </p>
-
-      </div>
-    </details>
-
-    <details>
-      <summary>
-        2 — Herbal Systems Pharmacology
-        <span class="chevron">▾</span>
-      </summary>
-      <div class="accordion-body">
-
-        <h3>Network Pharmacology, Polypharmacology, and Synergy in Herbal Medicine</h3>
-        <p>
-          The second arm of my research applies <strong>herbal systems pharmacology</strong>
-          to these network maps. Rather than optimizing single-target inhibition, I
-          study how <strong>multi-target natural products</strong> and rational herbal
-          combinations reshape lipid–protein interaction networks. Each compound or
-          formula is modeled as a distributed perturbation to a biological graph,
-          influencing multiple nodes simultaneously.
-        </p>
-
-        <ul>
-          <li>
-            <strong>Proteome-wide stability and structural profiling (CETSA-MS, LiP-MS, PELSA)</strong>
-            These platforms are applied under mixture conditions to define the distributed
-            proteomic perturbation landscape induced by multi-component herbal formulas.
-            Ligand-dependent shifts in thermal stability, conformational accessibility,
-            and protein interaction states are quantified across the proteome, capturing
-            both direct binding events and indirect network propagation. These perturbation
-            signatures are then integrated with lipidomic, phosphoproteomic, and RNA-seq
-            data to determine how protein-level changes propagate through lipid metabolic,
-            signaling, and transcriptional circuits.
-            <div class="accordion-schematic">
-              <img
-                src="assets/cetsa-schematic.png"
-                alt="Cellular thermal shift assay (CETSA) principle: ligand binding stabilizes proteins against heat-induced denaturation, shifting the melting temperature"
-                class="accordion-schematic-img"
-              />
-              <p class="accordion-schematic-caption">
-                CETSA principle — natural product binding stabilizes target proteins against
-                thermal denaturation, producing a measurable shift in melting temperature (ΔT<sub>m</sub>)
-                detectable by western blot or, at proteome scale, by mass spectrometry (CETSA-MS).
-                Licensed under CC BY 4.0.
-                
-                <span class="apa-label">Figure from:</span>
-                Song, J. (2025). Applications of the cellular thermal shift assay to drug discovery in natural products: A review. <em>International Journal of Molecular Sciences</em>, <em>26</em>(9), 3940.
-                <a
-                  href="https://doi.org/10.3390/ijms26093940"
-                  target="_blank"
-                  rel="noopener"
-                  class="accordion-cite-link"
-                >https://doi.org/10.3390/ijms26093940 ↗</a>
-              </p>
-            </div>
-          </li>
-          <li>
-            <strong>Synergy and network-level response profiling</strong>
-            Herbal combinations, fractions, and dose matrices are systematically tested
-            with multi-omic readouts to identify non-additive network responses. Synergy
-            is defined not only by single endpoints such as viability, but by cooperative
-            normalization of lipid, protein, and transcriptional signatures associated
-            with aging and chronic inflammation.
-            A central challenge in this work is identifying <em>which compounds</em> within
-            a complex mixture are responsible for a synergistic effect — without prior knowledge
-            of the active constituents. Classical metabolomics approaches fail here because they
-            treat each compound's abundance independently, missing the combinatorial signal
-            entirely. <em>Interaction metabolomics</em> addresses this directly by
-            augmenting the standard LC-MS feature matrix with compound interaction terms (CITs)
-            — synthetic variables calculated as the product of the peak intensities of each pair
-            of detected features. When PLS regression is applied to this expanded matrix,
-            the CITs with the highest selectivity ratios identify the specific compound pairs
-            whose co-abundance tracks with biological activity, pinpointing putative synergists
-            from within an unfractionated or partially fractionated mixture. This provides
-            the upstream compound-level identification that feeds directly into CETSA-MS
-            proteome-wide target deconvolution: interaction metabolomics reveals
-            <em>which compounds</em> are synergizing; CETSA-MS then reveals
-            <em>which proteins</em> those compounds collectively perturb.
-            <div class="accordion-schematic">
-              <img
-                src="assets/interaction-metabolomics-schematic.png"
-                alt="Interaction metabolomics workflow: LC-MS feature matrix augmented with compound interaction terms (CITs) fed into PLS regression to identify putative synergists — piperine and berberine — from a natural product mixture"
-                class="accordion-schematic-img"
-              />
-              <p class="accordion-schematic-caption">
-                Interaction metabolomics workflow — the standard LC-MS feature matrix is
-                expanded with compound interaction terms (CITs), each calculated as the
-                product of peak intensities for a pair of detected ions. PLS regression
-                on the augmented matrix identifies CITs whose co-abundance tracks with
-                biological activity, predicting putative synergists (here, piperine and
-                berberine) that classical metabolomics fails to detect.
-                
-                <span class="apa-label">Figure from:</span>
-                Vidar, W. S., Baumeister, T. U. H., Caesar, L. K., Kellogg, J. J., Todd, D. A., Linington, R. G., Kvalheim, O. M., &amp; Cech, N. B. (2023). Interaction metabolomics to discover synergists in natural product mixtures. <em>Journal of Natural Products</em>, <em>86</em>(3), 655–671.
-                <a
-                  href="https://doi.org/10.1021/acs.jnatprod.2c00518"
-                  target="_blank"
-                  rel="noopener"
-                  class="accordion-cite-link"
-                >https://doi.org/10.1021/acs.jnatprod.2c00518 ↗</a>
-              </p>
-            </div>
-          </li>
-          <li>
-            <strong>Spatially resolved intervention mapping</strong>
-            Spatial omics platforms (MALDI, DESI, and related imaging) are used to
-            determine where, within intact tissues and interfaces, herbal interventions
-            restore lipid and protein localization patterns toward a younger or healthier
-            spatial phenotype.
-          </li>
-          <li>
-            <strong>Network-guided lead selection and mechanism-of-action</strong>
-            Mixture-induced proteomic perturbations, multi-omic signatures, and spatial
-            remodeling are integrated into network pharmacology models that rank natural
-            products and combinations by their ability to rewire disease networks toward
-            homeostatic attractor states.
-          </li>
-        </ul>
-
-        <p>
-          Together, <strong>multi-omics systems biology</strong> and
-          <strong>herbal systems pharmacology</strong> form a closed experimental loop —
-          first defining how lipid–protein networks fail in aging and chronic disease,
-          then evaluating polypharmacological herbal interventions to identify strategies
-          that restore network structure and spatial organization toward healthier
-          physiological states.
         </p>
 
       </div>
