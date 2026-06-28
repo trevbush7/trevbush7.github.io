@@ -732,15 +732,13 @@
 
         <ul>
           <li>
-            <strong>Proteome-wide stability and structural profiling (CETSA-MS, LiP-MS, PELSA)</strong>
-            These platforms are applied under mixture conditions to define the distributed
+            <strong>Proteome-wide target deconvolution (CETSA-MS)</strong>
+            CETSA-MS is applied under mixture conditions to define the distributed
             proteomic perturbation landscape induced by multi-component herbal formulas.
-            Ligand-dependent shifts in thermal stability, conformational accessibility,
-            and protein interaction states are quantified across the proteome, capturing
-            both direct binding events and indirect network propagation. These perturbation
-            signatures are then integrated with lipidomic, phosphoproteomic, and RNA-seq
-            data to determine how protein-level changes propagate through lipid metabolic,
-            signaling, and transcriptional circuits.
+            Ligand-dependent shifts in thermal stability are quantified across the proteome,
+            capturing both direct binding events and indirect network perturbations. These
+            signatures are integrated with lipidomic and proteomic data to map how
+            target engagement propagates through lipid metabolic and signaling networks.
             <div class="accordion-schematic">
               <img
                 src="assets/cetsa-schematic.png"
@@ -769,8 +767,7 @@
             Herbal combinations, fractions, and dose matrices are systematically tested
             with multi-omic readouts to identify non-additive network responses. Synergy
             is defined not only by single endpoints such as viability, but by cooperative
-            normalization of lipid, protein, and transcriptional signatures associated
-            with aging and chronic inflammation.
+            normalization of lipid and protein signatures associated with aging and chronic inflammation.
             A central challenge in this work is identifying <em>which compounds</em> within
             a complex mixture are responsible for a synergistic effect — without prior knowledge
             of the active constituents. Classical metabolomics approaches fail here because they
@@ -818,13 +815,6 @@
             restore lipid and protein localization patterns toward a younger or healthier
             spatial phenotype.
           </li>
-          <li>
-            <strong>Network-guided lead selection and mechanism-of-action</strong>
-            Mixture-induced proteomic perturbations, multi-omic signatures, and spatial
-            remodeling are integrated into network pharmacology models that rank natural
-            products and combinations by their ability to rewire disease networks toward
-            homeostatic attractor states.
-          </li>
         </ul>
 
         <p>
@@ -863,33 +853,7 @@
             species, with class- and species-level ratio analysis to infer
             <em>in vivo</em> changes in enzymatic activity and pathway flux. These
             measurements define how lipid composition and bioactive lipid mediators
-            shift across aging and inflammatory states. Bulk tissue profiling is
-            complemented by <em>single-cell and cell-type–resolved lipidomics</em>,
-            enabling cell-intrinsic lipid network rewiring to be distinguished from
-            changes driven by shifts in tissue composition.
-            <div class="accordion-schematic">
-              <img
-                src="assets/single-cell-lipidomics.png"
-                alt="Cell-type-resolved lipidomics: distinct immune and stromal cell populations resolved for individual lipidome profiling"
-                class="accordion-schematic-img accordion-schematic-img--cells"
-              />
-              <p class="accordion-schematic-caption">
-                Cell-type–resolved lipidomics resolves lipidome differences across
-                distinct cell populations — enabling network rewiring to be attributed
-                to specific immune, stromal, or progenitor cell types rather than
-                bulk tissue averages.
-                Licensed under CC BY-NC-ND 4.0.
-
-                <span class="apa-label">Figure from:</span>
-                Sarkar, S., &amp; Ghosh, R. (2025). Unravelling lipid heterogeneity: Advances in single-cell lipidomics in cellular metabolism and disease. <em>BBA Advances</em>, <em>8</em>, 100169.
-                <a
-                  href="https://doi.org/10.1016/j.bbadva.2025.100169"
-                  target="_blank"
-                  rel="noopener"
-                  class="accordion-cite-link"
-                >https://doi.org/10.1016/j.bbadva.2025.100169 ↗</a>
-              </p>
-            </div>
+            shift across aging and inflammatory states.
 
             <div class="accordion-schematic accordion-schematic--lipidsig">
               <p class="accordion-schematic-label">Lipidomics analysis pipeline — LipidSig 2.0</p>
@@ -971,33 +935,19 @@
             </div>
           </li>
           <li>
-            <strong>Proteomics (DIA-MS, protein abundance, PTM, and phosphoproteomics)</strong>
-            Quantitative data-independent acquisition (DIA) mass spectrometry is used
-            to measure proteome-wide protein abundance with high reproducibility across
-            tissues, cell types, and conditions. This is coupled with targeted and global
-            post-translational modification profiling — including phosphoproteomics — to
-            define kinase activity, inflammatory pathway engagement, protein turnover, and
-            post-translational regulation of lipid metabolic enzymes.
+            <strong>Proteomics (DIA-MS)</strong>
+            Quantitative data-independent acquisition mass spectrometry measures
+            proteome-wide protein abundance across tissues and conditions — defining how
+            protein expression shifts during aging and chronic inflammatory disease, and
+            providing the proteomic context for interpreting lipidomic changes and
+            mapping which networks are engaged by herbal interventions.
           </li>
           <li>
-            <strong>Spatial omics (MALDI / DESI, DBiTplus, and related platforms)</strong>
-            Multiple complementary spatial omics platforms map molecular organization within
-            intact tissues at varying levels of resolution and modality coverage.
-            <em>Mass spectrometry imaging</em> (MALDI, DESI, and Raman-coupled variants)
-            provides untargeted, label-free mapping of lipid species and small molecules across
-            tissue sections, preserving the spatial distribution of lipid composition changes
-            across physiology, aging, and pathology.
-            <em>DBiTplus</em> extends this spatial layer by co-mapping the transcriptome and
-            multiplexed proteome on the same tissue section — combining DBiT-seq spatial
-            transcriptomics with multiplexed immunofluorescence imaging (CODEX/CellScape)
-            and H&amp;E staining. RNase H-mediated cDNA retrieval preserves tissue integrity
-            after spatial barcoding, enabling high-quality protein imaging on the same section.
-            A three-stage computational pipeline integrates the modalities — segmenting cells,
-            annotating cell types via MaxFuse-guided protein–reference matching, and
-            deconvolving transcriptomic spots into single-cell-resolved atlases — yielding
-            simultaneous resolution of cell identity, transcriptional state, and protein
-            signaling within intact tissue architecture. Compatible with both fresh-frozen
-            and FFPE clinical specimens.
+            <strong>Spatial omics (MALDI / DESI mass spectrometry imaging)</strong>
+            Mass spectrometry imaging (MALDI, DESI, and Raman-coupled variants) provides
+            untargeted, label-free mapping of lipid species, proteins, and small molecules
+            across intact tissue sections — preserving the spatial distribution of
+            compositional changes across physiology, aging, and pathology.
             <div class="accordion-schematic">
               <img
                 src="assets/desi-raman-spatial-lipidomics.png"
@@ -1023,37 +973,6 @@
               </p>
             </div>
 
-            <div class="accordion-schematic accordion-schematic--spaced">
-              <p class="accordion-schematic-label">Spatial multimodal co-mapping — DBiTplus</p>
-              <img
-                src="assets/dbitplus-schematic.png"
-                alt="DBiTplus workflow"
-                class="accordion-schematic-img"
-              />
-              <p class="accordion-schematic-caption accordion-schematic-caption--full">
-                DBiTplus workflow (a) — after spatial barcoding, RNase H enzymatically retrieves
-                cDNA while preserving tissue integrity, enabling subsequent CODEX/CellScape
-                multiplexed immunofluorescence imaging and H&amp;E staining on the same section,
-                yielding joint RNA, protein, and morphology datasets. The three-stage bioinformatic
-                pipeline (b) performs Mesmer-based cell segmentation, signal extraction, QC and
-                feature normalization (Stage 1); MaxFuse-guided cell-type annotation by
-                protein–reference dataset matching and whole-tissue annotation (Stage 2); and
-                protein–DBiT image co-registration with RCTD-like spot cell-type deconvolution
-                and splitting into pure cell-type sub-spots for single-cell-resolved spatial
-                transcriptome atlasing via Seurat WNN (Stage 3). Compatible with both
-                fresh-frozen and FFPE clinical specimens.
-                Licensed under CC BY 4.0.
-
-                <span class="apa-label">Figure from:</span>
-                Enninful, A., Zhang, Z., Klymyshyn, D., Ingalls, M., Yang, M., Zong, H., Bai, Z., Farzad, N., Su, G., Baysoy, A., Nam, J., Lu, Y., Bao, S., Deng, S., Zhang, N. R., Braubach, O., Xu, M. L., Ma, Z., &amp; Fan, R. (2026). Integration of imaging-based and sequencing-based spatial omics mapping on the same tissue section via DBiTplus. <em>Nature Methods</em>, 1–13.
-                <a
-                  href="https://doi.org/10.1038/s41592-025-02948-0"
-                  target="_blank"
-                  rel="noopener"
-                  class="accordion-cite-link"
-                >https://doi.org/10.1038/s41592-025-02948-0 ↗</a>
-              </p>
-            </div>
           </li>
         </ul>
 
