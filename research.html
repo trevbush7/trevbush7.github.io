@@ -275,6 +275,133 @@
     @media (max-width: 560px) {
       .techniques-grid { grid-template-columns: 1fr; }
     }
+
+    /* ── Research Pipeline ── */
+    .pipeline-section {
+      max-width: var(--max-wide);
+      margin: 0 auto;
+      padding: 56px 24px 0;
+    }
+    .pipeline-header {
+      margin-bottom: 36px;
+    }
+    .pipeline-header .eyebrow {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+    .pipeline-header h2 {
+      font-family: var(--serif);
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .pipeline-subhead {
+      font-size: 0.93rem;
+      color: var(--ink-soft);
+      line-height: 1.65;
+      max-width: 680px;
+    }
+    .pipeline-steps {
+      position: relative;
+    }
+    .pipeline-steps::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 28px;
+      bottom: 28px;
+      width: 2px;
+      background: var(--border);
+    }
+    .pipeline-step {
+      display: flex;
+      gap: 24px;
+      position: relative;
+      padding-bottom: 32px;
+    }
+    .pipeline-step:last-child { padding-bottom: 0; }
+    .pipeline-step-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--green);
+      color: var(--green);
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      box-shadow: var(--shadow-sm);
+      letter-spacing: 0;
+    }
+    .pipeline-step--context .pipeline-step-num {
+      border-color: var(--border);
+      color: var(--ink-soft);
+    }
+    .pipeline-step-content {
+      padding-top: 8px;
+      flex: 1;
+      min-width: 0;
+    }
+    .pipeline-step-title {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+    .pipeline-step--context .pipeline-step-title { color: var(--ink-soft); }
+    .pipeline-step-desc {
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      line-height: 1.72;
+      margin: 0 0 10px;
+    }
+    .pipeline-note {
+      font-size: 0.8rem;
+      color: var(--ink-soft);
+      font-style: italic;
+      margin: 0 0 10px;
+      opacity: 0.65;
+    }
+    .pipeline-step-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .pipeline-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--green);
+      background: rgba(29,111,91,0.07);
+      border: 1px solid rgba(29,111,91,0.18);
+      border-radius: 999px;
+      padding: 3px 10px;
+    }
+    .pipeline-step--context .pipeline-tag {
+      color: var(--ink-soft);
+      background: transparent;
+      border-color: var(--border);
+    }
+    @media (max-width: 820px) {
+      .pipeline-section { padding: 40px 16px 0; }
+    }
+    @media (max-width: 560px) {
+      .pipeline-steps::before { left: 16px; }
+      .pipeline-step { gap: 14px; }
+      .pipeline-step-num { width: 34px; height: 34px; font-size: 0.78rem; }
+    }
   </style>
 </head>
 <body>
@@ -460,6 +587,7 @@
     </div>
     <div class="techniques-grid">
       <div class="technique-item">Plant sourcing and preparation</div>
+      <div class="technique-item">High-throughput enzymatic screening</div>
       <div class="technique-item">Bioactivity guided fractionation</div>
       <div class="technique-item">Protein–Ligand Kinetics</div>
       <div class="technique-item">Interaction metabolomics</div>
@@ -471,6 +599,114 @@
       <div class="technique-item">Mouse models</div>
       <div class="technique-item">Mass spectrometry spatial omics (Proteomics, Lipidomics, Metabolomics)</div>
       <div class="technique-item">Positron-Emission Tomography</div>
+    </div>
+  </div>
+
+  <!-- Pipeline section -->
+  <div class="pipeline-section">
+    <div class="pipeline-header">
+      <p class="eyebrow">Workflow</p>
+      <h2>Research Pipeline</h2>
+      <p class="pipeline-subhead">The sequential logic connecting target selection to in vivo validation — a multi-step pipeline for discovering, characterizing, and validating multi-target herbal interventions in chronic inflammatory disease.</p>
+    </div>
+    <div class="pipeline-steps">
+
+      <div class="pipeline-step pipeline-step--context">
+        <div class="pipeline-step-num">1</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">Target Identification</h3>
+          <p class="pipeline-step-desc">Unbiased multi-omics profiling comparing disease and wild-type phenotypes — drawing on published proteomics, lipidomics, and transcriptomics datasets to identify dysregulated targets in chronic inflammatory disease.</p>
+          <p class="pipeline-note">Currently in active literature scanning phase. Many datasets are published; well-validated targets are prioritized for downstream screening.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">Literature review</span>
+            <span class="pipeline-tag">Published multi-omics datasets</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-step-num">2</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">High-Throughput Herbal Screening</h3>
+          <p class="pipeline-step-desc">Hundreds of herbal extracts assayed against validated targets. Enzymatic assays run at constant substrate concentration with product formation as the primary readout — rapidly identifying active extracts across a broad chemical space.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">Target-based enzymatic screening</span>
+            <span class="pipeline-tag">Plant sourcing and preparation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-step-num">3</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">Bioactive Compound Identification</h3>
+          <p class="pipeline-step-desc">Bioactivity-guided fractionation of active extracts in cell-free assays — progressively narrowing complex mixtures to the fractions and individual compounds responsible for target modulation.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">Bioactivity-guided fractionation</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-step-num">4</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">Target Deconvolution</h3>
+          <p class="pipeline-step-desc">Proteome-wide cellular thermal shift assay (CETSA-MS) maps the full set of protein targets engaged by active compounds under native cellular conditions — capturing both direct binders and indirect network perturbations propagated across the proteome.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">CETSA-MS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-step-num">5</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">Binding Site Characterization</h3>
+          <p class="pipeline-step-desc">Quantitative binding kinetics and affinity measurement; hydrogen-deuterium exchange mass spectrometry (HDX-MS) to map compound binding interfaces at the peptide level; molecular docking and dynamics to model and rationalize compound–protein interactions.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">Protein–Ligand Kinetics</span>
+            <span class="pipeline-tag">HDX-MS</span>
+            <span class="pipeline-tag">Molecular docking and dynamics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-step-num">6</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">Cell-Based Functional Validation</h3>
+          <p class="pipeline-step-desc">Active compounds evaluated in disease-relevant cellular models. Reporter cell lines provide quantitative, real-time pathway readout; inducible models enable controlled perturbation of specific disease-associated cellular states.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">Reporter cell lines</span>
+            <span class="pipeline-tag">Inducible cell models</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-step-num">7</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">Synergy Analysis</h3>
+          <p class="pipeline-step-desc">Before proceeding to in vivo studies, interaction metabolomics identifies which compound pairs within complex mixtures drive cooperative, non-additive biological effects — pinpointing synergists from unfractionated or partially fractionated extracts without prior knowledge of active constituents.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">Interaction metabolomics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <div class="pipeline-step-num">8</div>
+        <div class="pipeline-step-content">
+          <h3 class="pipeline-step-title">In Vivo Assessment</h3>
+          <p class="pipeline-step-desc">PK/PD characterization and efficacy in animal models; PET neuroimaging for quantitative, real-time brain target engagement and neuroactivity; spatially resolved mass spectrometry to assess disease phenotype resolution, molecular mechanism, and tissue distribution of interventions at the organ and cellular scale.</p>
+          <div class="pipeline-step-tags">
+            <span class="pipeline-tag">Mouse models</span>
+            <span class="pipeline-tag">Positron-Emission Tomography</span>
+            <span class="pipeline-tag">Mass spectrometry spatial omics</span>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -613,12 +849,11 @@
         <h3>Effector-Layer and Spatial Mapping of Lipid–Protein Networks</h3>
         <p>
           The second arm uses <strong>multi-omics systems biology</strong> to map how lipid
-          composition and lipid–protein interaction networks reorganize across tissues,
-          cell types, and anatomical niches during aging and chronic inflammatory disease.
-          Bulk measurements obscure this heterogeneity; resolving it requires layering
-          modalities: mass spectrometry to quantify what is present and how it is modified,
-          transcriptomics to capture regulatory programs, cell-type isolation to attribute
-          rewiring to specific populations, and spatial platforms to preserve anatomical context.
+          composition and lipid–protein interaction networks reorganize across tissues
+          and anatomical niches during aging and chronic inflammatory disease.
+          Bulk measurements obscure this heterogeneity; resolving it requires mass spectrometry
+          to quantify what is present and how it is modified, and spatial platforms to
+          preserve anatomical context and resolve the tissue-level organization of molecular changes.
         </p>
 
         <ul>
@@ -745,21 +980,6 @@
             post-translational regulation of lipid metabolic enzymes.
           </li>
           <li>
-            <strong>Cell-type–resolved profiling (flow cytometry and FACS)</strong>
-            Flow cytometric phenotyping and FACS are used to isolate defined cell
-            populations prior to lipidomic, proteomic, phosphoproteomic, and transcriptomic
-            analysis. This makes it possible to distinguish changes in tissue composition
-            from intrinsic lipid–protein network rewiring within specific immune, stromal,
-            epithelial, or progenitor populations.
-          </li>
-          <li>
-            <strong>RNA sequencing</strong>
-            Bulk and sorted-population RNA-seq captures transcriptional programs that
-            regulate lipid metabolism, stress responses, and inflammatory signaling.
-            These data provide the regulatory context for interpreting lipidomic and
-            proteomic changes, linking network remodeling to upstream gene-expression control.
-          </li>
-          <li>
             <strong>Spatial omics (MALDI / DESI, DBiTplus, and related platforms)</strong>
             Multiple complementary spatial omics platforms map molecular organization within
             intact tissues at varying levels of resolution and modality coverage.
@@ -838,13 +1058,11 @@
         </ul>
 
         <p>
-          Each modality contributes a distinct layer: bulk profiling captures
-          organ-level remodeling; FACS-resolved omics attributes changes to specific
-          cell populations; and spatial platforms preserve the tissue architecture
-          that determines which cell–cell interfaces and anatomical niches are most
-          vulnerable. Together they produce network models with enough resolution to
-          identify where dysregulation originates and what interventions are most
-          likely to restore it.
+          Each modality contributes a distinct layer: bulk mass spectrometry captures
+          organ-level compositional remodeling; and spatial platforms preserve the tissue
+          architecture that determines which anatomical niches are most vulnerable.
+          Together they produce network models with enough resolution to identify where
+          dysregulation originates and what interventions are most likely to restore it.
         </p>
 
       </div>
