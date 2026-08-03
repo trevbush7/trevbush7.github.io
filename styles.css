@@ -835,24 +835,45 @@ main.research-main {
   display: block;
 }
 
-/* Wider slot for wordmark-style logos (e.g. ACMAP) */
+/* Larger square slot (Affiliations page) */
+.edu-card--aff-logo {
+  grid-template-columns: 1fr 190px;
+}
+
+.edu-logo-block--aff {
+  width: 190px;
+  height: 190px;
+  min-width: 190px;
+}
+
+.edu-logo-block--aff .edu-logo-img {
+  width: 190px;
+  height: 190px;
+  max-width: 190px;
+  max-height: 190px;
+}
+
+/* Wider slot for wordmark-style logos (e.g. ASP, ACMAP) */
 .edu-card--wide-logo {
-  grid-template-columns: 1fr 150px;
+  grid-template-columns: 1fr 280px;
 }
 
 .edu-logo-block--wide {
-  width: 150px;
-  min-width: 150px;
-  height: 72px;
+  width: 280px;
+  min-width: 280px;
+  height: 160px;
 }
 
 .edu-logo-block--wide .edu-logo-img {
-  width: 150px;
-  max-width: 150px;
+  width: 280px;
+  height: 160px;
+  max-width: 280px;
+  max-height: 160px;
 }
 
 @media (max-width: 820px) {
   .edu-card--wide-logo { grid-template-columns: 1fr; }
+  .edu-card--aff-logo { grid-template-columns: 1fr; }
 }
 
 /* ============================================================
