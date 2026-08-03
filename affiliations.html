@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-593X25MBZ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-593X25MBZ3');
+  </script>
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Affiliations | Trevor Bush</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">Trevor Bush</a>
+    <button class="burger" id="burger" onclick="toggleMenu()" aria-label="Open menu">
+      ☰ <span>Menu</span>
+    </button>
+    <nav class="navlinks" id="navlinks">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="education.html">Education</a>
+      <a href="mentors.html">Mentors</a>
+      <a href="affiliations.html" aria-current="page">Affiliations</a>
+      <a href="publications.html">Publications</a>
+      <a href="CV.html">CV</a>
+      <a href="connect.html">Let's Connect</a>
+    </nav>
+  </div>
+</header>
+<main class="edu-page">
+  <div class="container">
+    <div class="edu-page-header">
+      <p class="eyebrow">Professional Affiliations</p>
+      <h1>Affiliations</h1>
+    </div>
+    <div class="edu-list">
+
+      <!-- ASP -->
+      <article class="edu-card">
+        <div class="edu-card-main">
+          <h2 class="edu-school">American Society of Pharmacognosy (ASP)</h2>
+          <p class="edu-meta">Member</p>
+          <p class="edu-degree">
+            ASP is an international, nonprofit scientific society dedicated to advancing
+            pharmacognosy and the broader natural products sciences — research fields
+            directly aligned with my work on herbal medicine and polypharmacology.
+          </p>
+          <div class="edu-tags">
+            <span class="edu-tag">Member</span>
+            <span class="edu-tag">Natural Products</span>
+            <span class="edu-tag">Pharmacognosy</span>
+          </div>
+        </div>
+        <div class="edu-logo-block">
+          <div class="edu-logo-circle">ASP</div>
+        </div>
+      </article>
+
+      <!-- CGCM -->
+      <article class="edu-card">
+        <div class="edu-card-main">
+          <h2 class="edu-school">Consortium for the Globalization of Chinese Medicine (CGCM)</h2>
+          <p class="edu-meta">Presenter, 2026 Annual Meeting</p>
+          <p class="edu-degree">
+            CGCM is a global, non-profit organization founded in 2003 to advance Chinese
+            herbal medicine research through collaboration among academics, industry, and
+            regulatory agencies worldwide. My PI, Professor Yung-Chi Cheng, serves as
+            Chairman. I presented my research at the CGCM annual meeting this year; I am
+            not currently a formal member of the organization.
+          </p>
+          <div class="edu-tags">
+            <span class="edu-tag">Presenter</span>
+            <span class="edu-tag">Herbal Medicine</span>
+            <span class="edu-tag">WE Medicine</span>
+          </div>
+        </div>
+        <div class="edu-logo-block">
+          <div class="edu-logo-circle">CGCM</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span class="footer-brand">Trevor Bush</span>
+    <span>© <span id="year"></span> · Yale University · New Haven, CT</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
