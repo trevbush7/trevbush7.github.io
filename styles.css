@@ -835,6 +835,26 @@ main.research-main {
   display: block;
 }
 
+/* Wider slot for wordmark-style logos (e.g. ACMAP) */
+.edu-card--wide-logo {
+  grid-template-columns: 1fr 150px;
+}
+
+.edu-logo-block--wide {
+  width: 150px;
+  min-width: 150px;
+  height: 72px;
+}
+
+.edu-logo-block--wide .edu-logo-img {
+  width: 150px;
+  max-width: 150px;
+}
+
+@media (max-width: 820px) {
+  .edu-card--wide-logo { grid-template-columns: 1fr; }
+}
+
 /* ============================================================
    MENTORS PAGE
    ============================================================ */
